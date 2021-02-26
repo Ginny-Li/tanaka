@@ -1,0 +1,223 @@
+
+
+/*---------------bg pic---------------*/
+
+
+header{	
+	margin-top:100px;
+}
+
+header img{
+
+	display: block;
+	margin: 0 auto;
+	width: 1200px;
+}
+/*------------news-------------------*/
+
+.news img {
+	width: 300px;
+	height: 300px;
+	margin-top: 50px;
+
+}
+.news {
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.news-tit {
+	padding-left: 80px;
+}
+
+
+
+a{
+	display: block;
+	color: #FFD668;
+	
+}
+
+ a:hover{
+	color:#FBB646;
+}
+
+/*-------------輪播商品------------*/
+
+.product-item{
+	text-align: center;
+}
+
+ .product {
+ 
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	padding-top: 30px;
+}		
+
+ .product li{
+	flex-shrink: 0;
+	padding: 0 5px;
+	
+}
+
+.product li a{
+	display: block;
+	background-color:#FFD668;
+	width: 120px;
+	height: 40px;
+	text-align: center;
+	border-radius: 10px;
+	color: white;
+	margin:10px auto;
+}
+
+.product li a:hover{
+	display: block;
+	background-color:#FF7D7D;
+	text-align: center;
+	border-radius: 10px;
+	color: transparent;
+	margin: 10px auto;
+
+}
+
+.product p{
+	position: relative;
+	color: transparent;
+	top:-40px;
+}
+
+.product p:hover{
+	position: relative;
+	top:-40px;
+	color:white;	
+}
+
+.product img{
+	width:200px ;
+}
+
+.cake1, .cake2{
+	display: none;
+}
+
+/*<>*/
+
+ .product .fa{
+	width: 50px;
+	height: 50px;
+	background-color:#FFD668;
+	color: white;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 48px;
+	font-size: 1.5em;
+	cursor: pointer;
+	margin-bottom: 100px;
+}
+
+.product .fa:hover{
+	background-color:#FF7D7D;
+}
+
+
+
+/*--------------about------------*/
+
+.about {
+	height: 600px;
+	background-color: #FFD668;
+	display: flex;
+	justify-content: center;
+}
+
+@keyframes swing{
+	15%{transform: translatex(5px);}
+	40%{transform: translatex(-5px);}
+	65%{transform: translatex(2px);}
+	85%{transform: translatex(-2px);}
+	100%{transform: translatex(0px);}
+}
+.about  a:hover{
+	animation:swing 1s 1;
+	
+}
+
+
+.tanaka{
+	padding: 30px;
+	width:600px;
+}
+
+.dia{
+	width:150px;
+}
+
+
+/*-----------diy-----------*/
+.diy {
+
+	margin:30px auto;
+	background-color:white;
+	width: 750px;
+	border-radius: 20px;
+	text-align: center;
+}
+
+
+.flag{
+	margin: 0 auto;	
+}
+
+.diy-pic{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.diy-pic img{
+	width: 200px;
+	display: flex;
+	padding-bottom: 30px;
+	padding-left: 5px;
+
+}
+
+
+/*------------map----------------*/
+
+
+.map{
+	margin: 0 auto;
+	margin-bottom: 50px;
+	background-color:white;
+	width: 750px;
+	border-radius: 20px;
+	
+
+}
+
+.map img{
+	width: 150px;
+
+}
+
+.map ul{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 30px;
+}
+
+.map li p{
+	line-height: 30px;
+}
+
+.s-tit{
+	color: #FBB646;
+}
+

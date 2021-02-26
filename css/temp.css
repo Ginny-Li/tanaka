@@ -1,0 +1,204 @@
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #FFFDED;
+	font-family: arial;
+	font-weight:bold;
+	font-size: 20px;
+	line-height: 40px;
+}
+
+
+
+img{
+	transition: all 0.5s;
+	
+}
+
+a{
+	text-decoration: none;
+	letter-spacing:2px;
+	cursor: pointer;
+}
+
+.wrapper{
+	margin:0 auto;
+	width: 100%;
+	min-width: 1200px;
+}
+
+h2{
+	font-size: 30px;
+	color: #FF7D7D;
+}
+
+h3{
+	font-size: 25px;
+	color:#FF7D7D; 
+}
+/*---------------------------------------------------*/
+nav{
+	
+	margin: 0 auto;
+	height: 100px;
+	background-color: #FFD668;
+	position:fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;	
+	min-width: 1200px;
+	
+}
+
+
+
+.nav{
+	width: 1200px;
+	height: 100px;
+	margin:0 auto;
+
+}
+
+.nav a{
+	 
+	color: black;
+	font-weight: bold;
+ 
+}
+
+.nav a:hover{
+	color: white;
+	
+}
+
+
+.nav ul{
+
+	display:flex;
+	align-items:flex-end;
+	justify-content:center;
+
+}
+
+.nav ul li{
+	margin:10px 50px;
+
+}
+
+
+.logo{
+	background-image: url(../img/index/logobk.png);
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size: 82px;
+	transition: all 0.5s;
+
+}
+
+.logo:hover{
+	
+	background-image: url(../img/index/logobkh.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 80px;
+	transform:scale(1.2);
+}
+
+
+.man {
+	float: right;
+	position: relative;
+	top:-80px;
+	left: -120px;
+
+}
+
+.cart {
+	float: right;
+	position: relative;
+	top: -80px;
+	left: -140px;
+
+}
+
+.top-btn:hover{
+	transform:scale(1.5);
+}
+
+.man img{
+	display: block;
+	width: 30px;
+	transition: all 0.5s;
+}
+.cart img{
+	display: block;
+	width: 30px;
+	transition: all 0.5s;
+}
+
+.man :hover{
+	transform:scale(1.2);
+}
+.cart :hover{
+	transform:scale(1.2);
+}
+
+/*------------footer-------------------*/
+
+footer{
+	min-width: 1200px;
+	background-color:white;
+	height: 200px;
+	color: #D7B974;
+	font-size: 14px;
+	text-align: center;
+	line-height: 30px;
+}
+
+
+footer .wrapper{
+	display:flex;
+	justify-content:center;
+	padding-top: 20px;
+}
+
+
+footer ul{
+	text-align: left;
+	padding-left: 50px;
+}
+
+footer a{
+	color:#D7B974;
+	letter-spacing: 10px;
+	display: inline-block;
+}
+
+footer a:hover{
+	color:#FF7D7D;
+	letter-spacing: 10px;
+}
+
+footer .fa{
+	color: #FFD668;
+}
+footer .fa:hover{
+	color:#FF7D7D;
+
+}
+
+
+footer ul p{
+	color: #FFD668;
+	text-align: left;
+	font-size: 14px;
+	line-height: 15px;
+
+}
+
+.p-bottom {
+	padding-top: 20px;
+}

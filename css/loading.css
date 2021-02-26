@@ -1,0 +1,102 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color: #FFD668;
+}
+
+
+.wrapper{
+	min-width: 1200px;
+	margin: 0 auto;
+	position:relative;
+
+}
+
+
+
+
+.logo-bg{
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+	margin-top: 200px;
+
+	background-color: white;
+	animation:logo-bg 1.5s ease forwards; 
+
+}
+
+@keyframes logo-bg{
+	0%{	
+		transform: scale(0.2);
+		transform: rotate(360deg);
+		opacity: 0;
+
+	}
+	100%{
+		opacity: 1;
+		border-radius: 50%;
+		background-color: white;
+	}
+}
+
+
+
+.logo-tanaka{
+	display:block;
+	margin: 0 auto;
+	animation:logo 1.5s ease 1;
+	position: relative;
+	top: -300px; 
+
+
+}	
+
+.logo--{
+	margin: 0 auto;
+	display: block;
+	position: relative;
+	top: -300px; 
+
+	animation:logo 1.5s ease 1; 
+}
+
+.logo-cake{
+	margin: 0 auto;
+	display: block;
+	position: relative;
+	top: -350px; 
+	animation:logo 1.5s ease 1; 
+}
+
+
+@keyframes logo{
+	0%{	
+		transform:scale(0.1);
+		opacity: 0;
+
+	}
+	100%{
+		opacity: 1;
+		
+	}
+}
+
+@keyframes swing{
+	15%{transform: translatey(10px);}
+	40%{transform: translatey(-10px);}
+	65%{transform: translatey(5px);}
+	85%{transform: translatey(-5px);}
+	100%{transform: translatey(0px);}
+}
+
+	
+
+
+a:hover .logo-item{
+
+	animation:swing 1s infinite	;
+
+}
+

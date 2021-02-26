@@ -1,0 +1,140 @@
+.shop-cart{
+	margin-top:100px;
+
+}
+h2{
+	text-align: center;
+	margin:30px auto;
+	padding-top: 30px;
+}
+
+
+.cart_header {
+	width: 900px;
+	background-color:white;
+	display: flex;
+	margin: 5px auto;
+}
+
+
+
+.cart_header div{
+	padding-left: 100px;
+	
+}
+
+button{
+	border: none;	
+	background-color:color: #A9A8A8;
+
+}
+
+button:focus{
+	outline:none;
+}
+
+button:hover{
+	color: #FFD668;
+}
+
+.fa{
+	font-size: 15px;
+}
+
+.del{
+	background-color: transparent;
+	color: #A9A8A8;
+}
+
+.del .fa{
+	font-size: 20px;
+}
+
+.price{
+	padding-left: 20px;
+}
+
+
+/*----maight----------------*/
+
+.maight{
+
+}
+
+
+.maight-like{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.maight-like li:first-child{
+	padding-right: 450px;
+}
+.maight-like li:last-child{
+	padding-right: 100px;
+}
+
+.maight-main{
+		
+	display: flex;
+	justify-content:center;
+}
+
+.main-icon{
+	padding-top: 20px;
+	padding-left: 10px;
+}
+
+.main-total{
+
+}
+
+.main-pic{
+	display: flex;
+
+
+}
+.main-pic div{
+	margin-left: 10px;
+}
+
+/*-----a--------------*/
+
+
+.main-total a{
+	display: block;
+	background-color:  #FFD668;
+	width: 120px;
+	height: 40px;
+	text-align: center;
+	border-radius: 10px;
+	color: white;
+	margin-left: 30px;
+	margin-bottom:20px;
+}
+
+.main-total a:hover{
+	background-color: #FF7D7D;
+}
+
+
+
+.main-pic a:hover p{
+	background-color:  #FFD668;
+	text-align: center;	
+	border-radius: 10px;
+	color: white;
+	width: 100px;
+	font-size: 18px;
+	margin: 0 auto;
+		position: relative;
+
+		top:-80px; 	
+}
+
+
+.main-pic a p{
+	background-color:transparent;
+	color:transparent;
+}

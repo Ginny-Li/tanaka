@@ -1,0 +1,138 @@
+
+/*----------------nav-----------------*/
+
+.about-btn a{
+	color: white;
+}
+
+/*-----------header---------------*/
+header{
+	/* margin-top: 100px; */
+}
+
+header img{
+	margin: 0 auto;
+	width:1200px;
+	display: block;
+}
+
+/*--------------story-----------------*/
+
+.story{
+	background-color: white;
+	height: 1070px;
+	border-top: 10px dotted #FFD668;
+	border-bottom: 10px dotted #FFD668;
+
+}
+	
+.story-tanaka{
+	width: 400px;
+	display: block;
+	margin:0 auto;
+	margin-top: 30px;
+}
+
+.story-diaTanaka{
+	display: block;
+	margin:0 auto;
+	width:230px;
+	position: relative;
+	right:200px;
+	top:-350px;
+}
+
+.story-diaHello{
+	display: block;
+	margin: 0 auto;
+	width:240px;
+	position: relative;
+	left:200px;
+	top:-500px;
+}
+
+.story-diaCake{
+	display: block;
+	margin: 0 auto;
+	width:100px;
+	position: relative;
+	right:200px;
+	top:-500px;
+
+}
+
+.story-main{
+	background-color: #FFF9C4;
+	padding:30px 0;
+	position: relative;
+	top:-450px;	
+}
+
+.story-main div{
+	margin: 30px auto;
+	background-color: white;
+	border-radius:20px;
+	padding: 50px; 
+	width: 900px;
+
+}
+
+.story-main h2{
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+.story-text{
+	background-color:white;
+}
+
+/*----------------section------------*/
+.section{
+	background-color: white;
+	border-bottom: 10px dotted #FFD668;
+}
+.section-main{
+	
+	text-align: center;
+
+}
+
+.section-main img{
+	display: block;
+}
+
+.section-main ul{
+	display: flex;
+	justify-content: center;
+}
+.section h2 {
+	padding-top: 20px;
+}
+
+.a{
+	display: block;
+	width:361px;
+	height:264px;
+}
+.b{
+	display: block;
+	width:263px;
+	height:236px;
+}
+.cow{
+	margin: 0 auto;
+}							
+.logo-icon{
+	margin:20px auto;
+	padding: 30px;}
+
+.section-main h2{
+	padding-bottom: 30px;
+}
+
+.section-main p{
+	font-size: 16px;
+}
+h3{
+	padding: 20px 0;
+}

@@ -82,7 +82,6 @@ input {
  
  }
 
-
 input:required + .help-text::before {
   	content: '*必填';
   	font-size: 15px;

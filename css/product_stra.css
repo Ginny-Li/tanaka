@@ -47,7 +47,7 @@
 }
 
 .product-main a:hover{
-	color:#FF7D7D;
+	background-color:#FBB646 ;
 }
 
 .product-main .buy{
@@ -63,7 +63,8 @@
 }
 
 .product-main .buy:hover{
-	color:#FFD668;
+	
+	background-color:#FBB646 ;
 }
 
 

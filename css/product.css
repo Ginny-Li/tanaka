@@ -7,7 +7,7 @@ body{
 
 header{
 	margin-top: 100px;
-	border-bottom: 10px dotted #FFD668; 
+	
 
 }
 
@@ -34,7 +34,7 @@ header img{
 	justify-content:center;
 	align-items: center;
 	padding-top: 30px;
-	border-bottom: 10px dotted #FFD668; 
+
 }		
 
  .product li{
@@ -105,7 +105,6 @@ header img{
 
 .customize{
 	background-color:#FFE5E5;
-	border-bottom: 10px dotted #FFD668;
 	margin: 0 auto;
 	border-radius: 20px;
 }

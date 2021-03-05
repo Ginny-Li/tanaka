@@ -144,7 +144,7 @@ a{
 	100%{transform: translatex(0px);}
 }
 .about  a:hover{
-	animation:swing 1s 1;
+	animation:swing 1s infinite;
 	
 }
 

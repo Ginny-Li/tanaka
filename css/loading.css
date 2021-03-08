@@ -7,13 +7,15 @@ body{
 
 
 .wrapper{
-	min-width: 1200px;
+	width: 1140px;
 	margin: 0 auto;
 	position:relative;
 
 }
 
-
+img{
+	max-width: 100%;
+}
 
 
 .logo-bg{
@@ -47,10 +49,9 @@ body{
 .logo-tanaka{
 	display:block;
 	margin: 0 auto;
-	animation:logo 2.5s ease 1;
 	position: relative;
-	top: -300px; 
-
+	top: -300px;
+	animation:logo 1.5s ease 1; 
 
 }	
 
@@ -60,7 +61,7 @@ body{
 	position: relative;
 	top: -300px; 
 
-	animation:logo 2s ease 1; 
+	animation:logo 1.5s ease 1; 
 }
 
 .logo-cake{
@@ -83,7 +84,6 @@ body{
 	}
 	100%{
 		opacity: 1;
-		
 	}
 }
 
@@ -104,3 +104,46 @@ a:hover .logo-item{
 
 }
 
+@media screen and (max-width: 575px){
+	.wrapper{
+	  max-width:300px;
+	}
+
+	.logo-bg{
+		max-width:300px;
+		max-height: 300px;
+	}
+
+
+	.logo-item{
+		animation:swing 1s infinite;
+	}
+  }
+  @media (min-width: 576px) and (max-width: 767px){
+	.wrapper{
+	 width:540px;
+	}
+	.logo-item{
+		animation:swing 1s infinite;
+	}
+
+  }
+  @media (min-width: 768px) and (max-width: 991px){
+	.wrapper{
+	 width:720px;
+	}
+	.logo-item{
+		animation:swing 1s infinite;
+	}
+  }
+  @media (min-width: 992px) and (max-width: 1200px){
+	.wrapper{
+	 width:960px;
+	}
+	.logo-item{
+		animation:swing 1s infinite;
+	}
+  }
+  @media (min-width: 1200x){
+	.wrapper{width:1140px;}
+  }

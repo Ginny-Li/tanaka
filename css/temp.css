@@ -84,7 +84,6 @@ nav{
 
 .nav ul li{
 	margin:10px 50px;
-
 }
 
 
@@ -99,10 +98,6 @@ nav{
 
 .logo:hover{
 	
-	background-image: url(../img/index/logobkh.png);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 80px;
 	transform:scale(1.2);
 }
 
@@ -201,3 +196,26 @@ footer ul p{
 .p-bottom {
 	padding-top: 20px;
 }
+
+/* ---------rwd-------- */
+/* @media screen and (min-width: 768px){
+	nav.nav{ */
+  /*     display: block; */
+	  /* display: block !important;
+	}
+  }
+  @media screen and (max-width: 767px){
+	nav.nav{
+	  display: none;
+	}
+  }
+  .nav ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+  }
+  .nav ul > li{
+	display: inline-block;
+} */
+  
+  

@@ -28,18 +28,14 @@ header img{
 	text-align: center;
 	padding-top: 60px;
 }
-
- .product {
-	display: flex;
-	justify-content:center;
-	align-items: center;
-	padding-top: 30px;
-
-}		
-
- .product li{
-	padding-left:5px;
-	
+.product{
+	width: 900px;
+	margin: 0 auto;
+	text-align: center;
+}
+.product img{
+	margin: 0 auto;
+	width: 250px;
 }
 
 .product li a{
@@ -53,7 +49,7 @@ header img{
 	margin:10px auto;
 }
 
-.product li a:hover{
+ .product li a:hover{
 	display: block;
 	background-color:#FF7D7D;
 	text-align: center;
@@ -61,7 +57,7 @@ header img{
 	color: transparent;
 	margin: 10px auto;
 
-}
+} 
 
 .product p{
 	position: relative;
@@ -73,45 +69,27 @@ header img{
 	position: relative;
 	top:-40px;
 	color:white;	
+} 
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 40px;
+    line-height: 1;
+    opacity: .75;
+    color: #FFD668;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-prev{
+	left: -45px;
 }
 
-.product img{
-	width:200px ;
-}
-
-.cake1, .cake2{
-	display: none;
-}
-
-/*<>*/
-
- .product .fa{
-	width: 50px;
-	height: 50px;
-	background-color:#FFD668;
-	color: white;
-	border-radius: 50%;
-	text-align: center;
-	line-height: 48px;
-	font-size: 1.5em;
-	cursor: pointer;
-	margin-bottom: 100px;
-}
-
-.product .fa:hover{
-	background-color:#FF7D7D;
-}
 /*------------customize------------*/
 
-.customize{
-	background-color:#FFE5E5;
-	margin: 0 auto;
-	border-radius: 20px;
-}
 
 .customize-tit {
 	background-color: white;
-	margin:50px;
+	margin:50px auto;
+	width: 1000px;
 	border-radius:20px;
 	display: flex;
 	justify-content: center;

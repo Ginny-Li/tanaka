@@ -3,10 +3,6 @@
 /*---------------bg pic---------------*/
 
 
-header{	
-	margin-top:100px;
-}
-
 header img{
 
 	display: block;
@@ -47,22 +43,14 @@ a{
 
 /*-------------輪播商品------------*/
 
-.product-item{
+.product{
+	width: 900px;
+	margin: 0 auto;
 	text-align: center;
 }
-
- .product {
- 
-	display: flex;
-	justify-content:center;
-	align-items: center;
-	padding-top: 30px;
-}		
-
- .product li{
-	flex-shrink: 0;
-	padding: 0 5px;
-	
+.product img{
+	margin: 0 auto;
+	width: 250px;
 }
 
 .product li a{
@@ -76,7 +64,7 @@ a{
 	margin:10px auto;
 }
 
-.product li a:hover{
+ .product li a:hover{
 	display: block;
 	background-color:#FF7D7D;
 	text-align: center;
@@ -84,7 +72,7 @@ a{
 	color: transparent;
 	margin: 10px auto;
 
-}
+} 
 
 .product p{
 	position: relative;
@@ -96,36 +84,19 @@ a{
 	position: relative;
 	top:-40px;
 	color:white;	
+} 
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 40px;
+    line-height: 1;
+    opacity: .75;
+    color: #FFD668;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
-
-.product img{
-	width:200px ;
+.slick-prev{
+	left: -45px;
 }
-
-.cake1, .cake2{
-	display: none;
-}
-
-/*<>*/
-
- .product .fa{
-	width: 50px;
-	height: 50px;
-	background-color:#FFD668;
-	color: white;
-	border-radius: 50%;
-	text-align: center;
-	line-height: 48px;
-	font-size: 1.5em;
-	cursor: pointer;
-	margin-bottom: 100px;
-}
-
-.product .fa:hover{
-	background-color:#FF7D7D;
-}
-
-
 
 /*--------------about------------*/
 
@@ -221,3 +192,29 @@ a{
 	color: #FBB646;
 }
 
+/* -------------------------- */
+@media screen and (max-width: 575px){
+	.wrapper{
+		width: 100%;
+	}
+  }
+  @media (min-width: 576px) and (max-width: 767px){
+	.wrapper{
+	 width:540px;
+	}
+  }		
+  @media (min-width: 768px) and (max-width: 991px){
+	.wrapper{
+	 width:720px;
+	}
+  }
+  @media (min-width: 992px) and (max-width: 1200px){
+	.wrapper{
+	 width:960px;
+	}
+  }
+  @media (min-width: 1200x){
+	.wrapper{
+		width:1140px;
+	}
+  }

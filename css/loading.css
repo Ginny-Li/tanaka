@@ -106,14 +106,13 @@ a:hover .logo-item{
 
 @media screen and (max-width: 575px){
 	.wrapper{
-	  max-width:300px;
+	  max-width:100%;
 	}
 
 	.logo-bg{
 		max-width:300px;
 		max-height: 300px;
 	}
-
 
 	.logo-item{
 		animation:swing 1s infinite;

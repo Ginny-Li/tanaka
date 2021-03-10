@@ -3,11 +3,15 @@
 /*---------------bg pic---------------*/
 
 
-header img{
-
+.slider img{
 	display: block;
+	margin:0 auto;
+	width: 1140px;
+	width: 100%;
+}
+.slider div{
+	width: 1000px;
 	margin: 0 auto;
-	width: 1200px;
 }
 /*------------news-------------------*/
 
@@ -121,8 +125,11 @@ a{
 
 
 .tanaka{
-	padding: 30px;
-	width:600px;
+	margin-top:100px;
+	height: 400px;
+	width: 400px;
+
+	
 }
 
 .dia{
@@ -135,13 +142,14 @@ a{
 
 	margin:30px auto;
 	background-color:white;
-	width: 750px;
+	width: 900px;
 	border-radius: 20px;
 	text-align: center;
 }
 
 
 .flag{
+	width: 500px;
 	margin: 0 auto;	
 }
 
@@ -167,7 +175,7 @@ a{
 	margin: 0 auto;
 	margin-bottom: 50px;
 	background-color:white;
-	width: 750px;
+	width: 900px;
 	border-radius: 20px;
 	
 
@@ -200,21 +208,21 @@ a{
   }
   @media (min-width: 576px) and (max-width: 767px){
 	.wrapper{
-	 width:540px;
+	 	width:540px;
 	}
   }		
   @media (min-width: 768px) and (max-width: 991px){
 	.wrapper{
-	 width:720px;
+	 	width:720px;
 	}
   }
   @media (min-width: 992px) and (max-width: 1200px){
 	.wrapper{
-	 width:960px;
+	 	width:960px;
 	}
-  }
+}
   @media (min-width: 1200x){
 	.wrapper{
 		width:1140px;
-	}
   }
+}

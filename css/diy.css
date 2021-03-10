@@ -1,22 +1,19 @@
 
 
 /*-----nav-----------*/
-.diy-btn a{
+.nav .diy-btn a{
 	color: white;
 }
 /*----------header------*/
 
-header{
-	margin-top:100px; 
-}
-
-header .wrapper{
-
-}
-
-header img{
-	width:1200px;
+.slider img{
 	display: block;
+	margin:0 auto;
+	width: 1140px;
+	width: 100%;
+}
+.slider{
+	width: 1000px;
 	margin: 0 auto;
 }
 
@@ -32,7 +29,7 @@ header img{
 .diy-main{
 	text-align: center;
 	margin: 0 auto;
-	border-bottom: 10px dotted #FFD668;   
+	border-bottom: 10px dotted ;   
 	padding: 30px;
 	display: flex;
 	justify-content: center;
@@ -74,30 +71,24 @@ body{
 	     background-size: 50px 50px, 50px 50px, auto auto;
 }
 
-.class{	
-	margin-top:130px;
-	margin-bottom: 30px;
+.class img{
+	display: inline-block;
 }
 
-.class .diy-pic li{
-	padding-left: 30px;
+.class .diy-main {
+	margin: 0 auto;
+	width: 1000px;
+	border: 2px solid;
 }
-
-.class .wrapper{
-	background-color: white;
-	border-radius: 20px;
-
-}
-
-
 .s-tit{
 	color: #D7B974;
 }
 
 .class-inf{
+	width: 1000px;
 	background-color: white;
 	border-radius: 20px;
-	margin: 30px;
+	margin: 30px auto;
 }
 
 .class-inf h3{
@@ -113,5 +104,5 @@ body{
 }
 
 .class .diy-main a{
-	margin-bottom: 10px;: 
+	margin-bottom: 10px;
 }

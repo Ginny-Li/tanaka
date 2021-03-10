@@ -14,6 +14,7 @@ body{
 
 img{
 	transition: all 0.5s;
+
 	
 }
 
@@ -25,8 +26,7 @@ a{
 
 .wrapper{
 	margin:0 auto;
-	width: 100%;
-	min-width: 1200px;
+	min-width: 1140px;
 }
 
 h2{
@@ -38,6 +38,85 @@ h3{
 	font-size: 25px;
 	color:#FF7D7D; 
 }
+
+.ham{
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+
+button{
+    position: absolute;
+    float: right;
+    top:30px;
+    right: 80px;
+    border: transparent;
+    background-color: transparent;
+	display: none;
+	transition: all 0.5s;
+}
+
+button img{
+    width: 30px;
+}
+
+button:hover{
+	transform: scale(1.2);
+}
+
+button:focus{
+	outline: transparent;
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+    .nav{
+         min-width:85%;
+		}
+ 
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .nav{
+        min-width:60%;
+  		}
+}
+
+@media screen and (max-width:767px){
+	.list-a, .list-b, .list-c, .list-d{
+        display: none;
+	}
+	button{
+		display: block;
+	}
+   
+}
+ 
+/* -----下拉式選單----- */
+
+.nav .ham-bar{
+	border:1px solid #FFD668;
+	display: inline-block;
+	background-color:white;
+	text-align: center;
+	display: none;
+	margin-top:8px;
+  } 
+
+.nav .ham-bar li{
+	border-bottom: 1px solid #FFD668;
+} 
+
+.nav .ham-bar li a:hover{
+	background-color: #FFD668;
+} 
+
+  @media screen and (max-width:767px){
+	.nav .ham-bar{
+		display: block;
+	}
+  }   
+
 /*---------------------------------------------------*/
 nav{
 	
@@ -48,79 +127,75 @@ nav{
 	top: 0;
 	width: 100%;
 	z-index: 1;	
-	min-width: 1200px;
+	
 	
 }
 
 
 
 .nav{
-	width: 1200px;
+	max-width: 1140px;
 	height: 100px;
-	margin:0 auto;
+	margin:0 auto; 
+	position: relative;
 
 }
 
-.nav a{
+.nav ul a{
 	 
 	color: black;
 	
  
 }
 
-.nav a:hover{
-	color: white;
-	
+.nav ul a:hover{
+	color: white;	
 }
 
 
 .nav ul{
 
 	display:flex;
-	align-items:flex-end;
-	justify-content:center;
+	align-items: flex-end;
+	justify-content:space-evenly;
 
 }
 
-.nav ul li{
-	margin:10px 50px;
-}
+/* -------nav-icon----- */
 
 
-.logo{
-	background-image: url(../img/index/logobk.png);
-	background-position:center;
-	background-repeat: no-repeat;
-	background-size: 82px;
+ .logo{
 	transition: all 0.5s;
-
+	padding-top: 10px;
 }
+
+.logo img {
+	width: 95px;
+	display: block;
+	transition: all 0.5s;
+	
+} 
 
 .logo:hover{
-	
 	transform:scale(1.2);
 }
 
 
-.man {
+ .man {
 	float: right;
-	position: relative;
-	top:-80px;
-	left: -120px;
+	position: absolute;
+	top:30px;
+	right:50px;
 
 }
 
 .cart {
 	float: right;
-	position: relative;
-	top: -80px;
-	left: -140px;
+	position: absolute;
+	top:30px;
+	right:15px;
 
-}
-
-.top-btn:hover{
-	transform:scale(1.5);
-}
+} 
 
 .man img{
 	display: block;
@@ -197,25 +272,5 @@ footer ul p{
 	padding-top: 20px;
 }
 
-/* ---------rwd-------- */
-/* @media screen and (min-width: 768px){
-	nav.nav{ */
-  /*     display: block; */
-	  /* display: block !important;
-	}
-  }
-  @media screen and (max-width: 767px){
-	nav.nav{
-	  display: none;
-	}
-  }
-  .nav ul{
-	list-style: none;
-	margin: 0;
-	padding: 0;
-  }
-  .nav ul > li{
-	display: inline-block;
-} */
   
   

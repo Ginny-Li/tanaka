@@ -5,7 +5,7 @@
 
 
 /*-------------nav------------*/
-.product-btn a{
+.nav .product-btn a{
 	color: white;
 }
 
@@ -14,9 +14,12 @@
 
 
 .product{
-	margin: 50px auto;
+	margin:0 auto;
 	background-image: url(../img/product/bg.png);
 	background-size: contain;
+}
+.product h2{
+
 }
 
 .product-main ul{
@@ -28,7 +31,7 @@
 .product-main{
 	width: 800px;
 	background-color: white;
-	margin:130px auto 30px;
+	margin:30px auto 30px;
 	padding: 50px ;
 	border-radius: 20px;
 

@@ -7,7 +7,7 @@ background-image:
 	 }
 
 /*----------nav-------------*/
-.qa-btn a{
+.nav .qa-btn a{
 	color: white;
 }
 
@@ -21,7 +21,6 @@ background-image:
 	border-radius:20px;
 	padding: 50px; 
 	width: 1000px;
-	margin-top: 150px;
 
 }
 

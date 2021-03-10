@@ -15,30 +15,36 @@
 <body>
 <!-- ----nav-------------------------------- -->
 
-	<nav>
+<nav>
 		
-		<div class="nav">
-			<ul>
-				<li><a href="./paging/about.html">品牌故事</a></li>
-				<li><a href="./paging/product.html#">商品列表</a></li>
-			<li class="logo"><a href="index.html"><img src="./img/index/logo.png" width="100px" alt=""></a></li>
-				<li><a href="./paging/Q&A.html">相關問題</a></li>
-				<li><a href="./paging/diy.html">手做小教室</a></li>
-			</ul>
-			
-	
-				<div class="nav-icon">
-					<span class="man"><a href="#"><img src="img/index/man.png" alt=""></a></span>
+	<div class="nav">
+   
+		<ul>
+			<li class="list-a"><a href="./paging/about.html">品牌故事</a></li>
+			<li class="list-b"><a href="./paging/product.html#">商品列表</a></li>
+			<li class="logo"><a href="index.html"><img src="./img/index/logo.png" alt=""></a></li>
+			<li class="list-c"><a href="./paging/Q&A.html">相關問題</a></li>
+			<li class="list-d"><a href="./paging/diy.html">手做小教室</a></li>
+		</ul>
+		
+		<ul class="ham-bar">
+			<li><a href="./paging/about.html">品牌故事</a></li>
+			<li><a href="./paging/product.html#">商品列表</a></li>
+			<li><a href="./paging/Q&A.html">相關問題</a></li>
+			<li><a href="./paging/diy.html">手做小教室</a></li>
+		</ul>
+	   
+		
+		<div class="man"><a href="#"><img src="img/index/man.png" alt=""></a></div>
+		<div class="cart"><a href="./paging/cart.html#"><img src="img/index/shoopingCart.png" alt=""></a></div>
+		<button><img src="./img/bar.png" alt=""></button>
+		
+	</div>	
+</nav>
 
-			        <span class="cart"><a href="./paging/cart.html#"><img src="img/index/shoopingCart.png" alt=""></a></span>
-				</div>	
-			
-		</div>	
-	</nav>
 <!-- ------------header---------------- -->
 
 		<header>
-			
 			<div class="wrapper">
 				<div class="slider">
 					<div><img src="/img/index/cheesscake.png" alt=""></div>
@@ -202,9 +208,19 @@
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+	
+    <script>
+        $(function(){
+  // 點擊按鈕，選單縮放
+            $(".nav button").on("click", function(){
+                $(".nav ul.ham-bar").slideToggle();
+                 });
+            });
+    </script>
+
 	<script>
 		$('.slider').slick({
-			centerMode:true,
+			centerMode:false,
 			centerPadding: '100px',
 			slidesToShow: 1,
 			slidesToScroll: 1,

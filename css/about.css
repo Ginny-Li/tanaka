@@ -1,19 +1,22 @@
 
 /*----------------nav-----------------*/
 
-.about-btn a{
+.nav .about-btn a{
 	color: white;
 }
 
 /*-----------header---------------*/
-header{
-	/* margin-top: 100px; */
-}
 
-header img{
-	margin: 0 auto;
-	width:1200px;
+.slider img{
 	display: block;
+	margin:0 auto;
+	width: 1140px;
+	width: 100%;
+}
+.slider{
+	width: 1000px;
+
+	margin: 0 auto;
 }
 
 /*--------------story-----------------*/

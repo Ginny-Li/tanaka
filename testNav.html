@@ -13,23 +13,64 @@
 
 </head>
 <style>
-.ham{
-    display: block;
-    width: 50px;
-    height: 50px;
-}
 
-button{
-    position: absolute;
+/* 基本按鈕樣式 */
+
+button.hamburger_icon{
+  width: 31px;
+  height: 31px;
+  
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
     float: right;
     top:30px;
-    right: 80px;
+    right: 85px;
     border: transparent;
-    background-color: transparent;
+    background-color: white;
+    border-radius: 50%;
 }
-button img{
-    width: 30px;
+
+/* 每一條橫線的樣式 */
+button.hamburger_icon span.-hr{
+  height: 2px;
+  width: 15px;
+  background-color:black;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
+
+/* 最上面那條線的樣式 */
+button.hamburger_icon span.-hr.-top{
+  top: 30%;
+}
+
+/* 最下面那條線的樣式 */
+button.hamburger_icon span.-hr.-bottom{
+  top: 70%;
+}
+
+
+
+/* -on 的狀態 */
+/* 上方的線 */
+button.hamburger_icon.-on span.-hr.-top{
+    opacity: 0;
+}
+/* 中間的線 */
+button.hamburger_icon.-on span.-hr.-middle{
+  opacity: 1;
+}
+/* 下方的線 */
+button.hamburger_icon.-on span.-hr.-bottom{
+    opacity: 0;
+}
+
+
 @media (min-width: 992px) and (max-width: 1200px){
     .nav{
          min-width:85%;
@@ -75,7 +116,11 @@ button img{
 			
 			<div class="man"><a href="#"><img src="img/index/man.png" alt=""></a></div>
 		    <div class="cart"><a href="./paging/cart.html#"><img src="img/index/shoopingCart.png" alt=""></a></div>
-            <button><img src="./img/bar.png" alt=""></button>
+            <button type="button" class="hamburger_icon">
+                <span class="-hr -top"></span>
+                <span class="-hr -middle"></span>
+                <span class="-hr -bottom"></span>
+              </button>
 			
 		</div>	
 	</nav>
@@ -89,5 +134,14 @@ button img{
                 $(".nav ul.ham-bar").slideToggle();
                  });
             });
+
+         $(function(){
+  // 按鈕狀態的切換
+            $("button.hamburger_icon").on("click", function(){
+    
+                $(this).toggleClass("-on");
+    
+            });
+        });
     </script>
 </html>    

@@ -25,8 +25,9 @@ a{
 }
 
 .wrapper{
+	
 	margin:0 auto;
-	min-width: 1140px;
+	width: 1200px;
 }
 
 h2{
@@ -34,41 +35,95 @@ h2{
 	color: #FF7D7D;
 }
 
+
 h3{
 	font-size: 25px;
 	color:#FF7D7D; 
 }
 
-.ham{
-    display: block;
-    width: 50px;
-    height: 50px;
+@media (min-width: 576px) and (max-width: 767px){
+	body{
+		font-size:18px;
+	}
+	h2{
+		font-size: 27px;
+	}
+	h3{
+		font-size: 22.5px;
+	}
 }
+@media screen and (max-width: 575px){
+	body{
+		font-size:16px;
+	}
+	h2{
+		font-size: 24px;
+	}
+	h3{
+		font-size: 20px;
+	}
+}
+/* ----------基本按鈕樣式---------- */
 
-
-button{
-    position: absolute;
-    float: right;
-    top:30px;
-    right: 80px;
-    border: transparent;
-    background-color: transparent;
+button.hamburger_icon{
+	width: 31px;
+	height: 31px;
+	
+	position: relative;
+	cursor: pointer;
+	outline: none;
+	position: absolute;
+	float: right;
+	top:30px;
+	right: 85px;
+	border: transparent;
+	background-color: white;
+	border-radius: 50%;
 	display: none;
-	transition: all 0.5s;
-}
+  }
+  
+/* ----------每一條橫線的樣式 ----------*/
+button.hamburger_icon span.-hr{
+	height: 2px;
+	width: 15px;
+	background-color:black;
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+  }
+  
+/* ----------最上面那條線的樣式---------- */
+button.hamburger_icon span.-hr.-top{
+	top: 30%;
+  }
+  
+/* ----------最下面那條線的樣式 ----------*/
+button.hamburger_icon span.-hr.-bottom{
+	top: 70%;
+  }
+  
+  
+  
+/* -----------on 的狀態 ----------*/
+/* 上方的線 */
+button.hamburger_icon.-on span.-hr.-top{
+	opacity: 0;
+  }
+/* 中間的線 */
+button.hamburger_icon.-on span.-hr.-middle{
+	opacity: 1;
+  }
+/* 下方的線 */
+button.hamburger_icon.-on span.-hr.-bottom{
+	opacity: 0;
+  }
 
-button img{
-    width: 30px;
-}
-
-button:hover{
-	transform: scale(1.2);
-}
-
-button:focus{
+button.hamburger_icon:focus{
 	outline: transparent;
 }
-
+/* -----------nav-rwd ----------*/
 @media (min-width: 992px) and (max-width: 1200px){
     .nav{
          min-width:85%;
@@ -83,10 +138,10 @@ button:focus{
 }
 
 @media screen and (max-width:767px){
-	.list-a, .list-b, .list-c, .list-d{
+	.nav .about-btn,.nav .product-btn,.nav .qa-btn, .nav .diy-btn{
         display: none;
 	}
-	button{
+	button.hamburger_icon{
 		display: block;
 	}
    
@@ -95,7 +150,7 @@ button:focus{
 /* -----下拉式選單----- */
 
 .nav .ham-bar{
-	border:1px solid #FFD668;
+	border:2px solid #FFD668;
 	display: inline-block;
 	background-color:white;
 	text-align: center;
@@ -104,18 +159,16 @@ button:focus{
   } 
 
 .nav .ham-bar li{
-	border-bottom: 1px solid #FFD668;
+	border-bottom: 2px solid #FFD668;
+} 
+.nav .ham-bar li:last-child{
+	border-bottom: 2px solid transparent;
 } 
 
-.nav .ham-bar li a:hover{
+.nav .ham-bar li:hover{
 	background-color: #FFD668;
 } 
 
-  @media screen and (max-width:767px){
-	.nav .ham-bar{
-		display: block;
-	}
-  }   
 
 /*---------------------------------------------------*/
 nav{
@@ -126,7 +179,7 @@ nav{
 	position:fixed;
 	top: 0;
 	width: 100%;
-	z-index: 1;	
+	z-index: 2;	
 	
 	
 }
@@ -218,9 +271,8 @@ nav{
 /*------------footer-------------------*/
 
 footer{
-	min-width: 1200px;
+
 	background-color:white;
-	height: 200px;
 	color: #D7B974;
 	font-size: 14px;
 	text-align: center;
@@ -230,14 +282,12 @@ footer{
 
 footer .wrapper{
 	display:flex;
-	justify-content:center;
+	justify-content:space-around;
 	padding-top: 20px;
 }
 
-
 footer ul{
 	text-align: left;
-	padding-left: 50px;
 }
 
 footer a{
@@ -272,5 +322,64 @@ footer ul p{
 	padding-top: 20px;
 }
 
-  
-  
+@media (min-width: 576px) and (max-width: 767px){
+	footer .wrapper{
+		flex-direction: column;
+		align-items: center;
+	}
+	.footer-inf{
+		display: flex;
+	}
+	.footer-inf li{
+		padding: 10px 15px;
+	}
+	.footer-contact{
+		display: flex;
+		padding-bottom: 10px;
+	}
+	.footer-contact li{
+		padding-right: 45px;
+	}
+	.footer-contact li:last-child{
+		padding-left: 30px;
+	}
+	.footer-where{
+		display: flex;
+	}
+	.footer-where li{
+		padding:0 10px;
+	}
+	.footer-icon{
+		display: flex;
+	}
+	.footer-icon li{
+		padding:5px 70px;
+	}
+	
+}  
+@media screen and (max-width: 575px){
+	footer .wrapper{
+		flex-direction: column;
+		align-items: center;
+	}
+	.footer-inf{
+		padding: 5px;
+		text-align: center;
+	}
+
+	.footer-contact{
+		padding: 5px;
+		text-align: center;
+	}
+	.footer-where{
+		padding:5px 5px 5px 50px;
+		text-align: center;
+	}
+
+	.footer-icon {
+		display: flex;
+	}
+	.footer-icon li{
+		padding: 0 10px;
+	}
+}

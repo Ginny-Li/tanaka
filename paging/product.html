@@ -17,17 +17,29 @@
 	<nav>
 		<div class="nav">
 				<ul>
-				<li class="about-btn"> <a href="..//paging/about.html">品牌故事</a></li>
-				<li class="product-btn"><a href="../paging/product.html"><i class="fa fa-cutlery" aria-hidden="true"></i> 商品列表</a></li>
-				<li class="logo"><a href="../index.html"><img src="../img/index/logo.png" alt=""></a></li>
-				<li class="qa-btn"><a href="../paging/Q&A.html">相關問題</a></li>
-				<li class="diy-btn"><a href="diy.html"> 手做小教室</a></li>
-			</ul>
-			<div class="man"><a href="#"><img src="img/index/man.png" alt=""></a></div>
-			<div class="man"><a href="#"><img src="../img/index/man.png" alt=""></a></div>
-		    <div class="cart"><a href="cart.html#"><img src="../img/index/shoopingCart.png" alt=""></a></div>
-		</div>
-		</nav>
+					<li class="about-btn"> <a href="..//paging/about.html">品牌故事</a></li>
+					<li class="product-btn"><a href="../paging/product.html"><i class="fa fa-cutlery" aria-hidden="true"></i> 商品列表</a></li>
+					<li class="logo"><a href="../index.html"><img src="../img/index/logo.png" alt=""></a></li>
+					<li class="qa-btn"><a href="../paging/Q&A.html">相關問題</a></li>
+					<li class="diy-btn"><a href="diy.html"> 手做小教室</a></li>
+				</ul>	
+					
+				<ul class="ham-bar">
+					<li><a href="../paging/about.html">品牌故事</a></li>
+					<li><a href="../paging/product.html#">商品列表</a></li>
+					<li><a href="../paging/Q&A.html">相關問題</a></li>
+					<li><a href="../paging/diy.html">手做小教室</a></li>
+				</ul>
+				
+				<div class="man"><a href="#"><img src="../img/index/man.png" alt=""></a></div>
+				<div class="cart"><a href="cart.html#"><img src="../img/index/shoopingCart.png" alt=""></a></div>
+				<button type="button" class="hamburger_icon">
+					<span class="-hr -top"></span>
+					<span class="-hr -middle"></span>
+					<span class="-hr -bottom"></span>
+				  </button>
+			</div>
+	</nav>
 
 		<!-- ---------------header-------------- -->
 		<header>
@@ -195,6 +207,24 @@
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+	<script>
+        $(function(){
+  // 點擊按鈕，選單縮放
+            $("button.hamburger_icon").on("click", function(){
+                $(".nav ul.ham-bar").slideToggle();
+                 });
+            });
+
+         $(function(){
+  // 按鈕狀態的切換
+            $("button.hamburger_icon").on("click", function(){
+    
+                $(this).toggleClass("-on");
+    
+            });
+        });
+    </script>
+
 	<script>
 		$('.slider').slick({
 			centerMode:false,

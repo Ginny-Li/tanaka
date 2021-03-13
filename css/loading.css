@@ -6,27 +6,43 @@ body{
 }
 
 
-.wrapper{
-	width: 1140px;
+/* .wrapper{
+	max-width: 1140px;
 	margin: 0 auto;
-	position:relative;
 
-}
+
+} */
 
 img{
 	max-width: 100%;
+	display: block;
+	margin: auto;
+}
+
+a{
+	display: block;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+	width: 300px;
 }
 
 
 .logo-bg{
 	width: 300px;
 	height: 300px;
-	margin: 0 auto;
-	margin-top: 200px;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+}
 
+.logo-bg__inner{
+	width: 100%;
+	height: 100%;
 	background-color: white;
 	animation:logo-bg 1.5s ease forwards; 
-
 }
 
 @keyframes logo-bg{
@@ -44,8 +60,7 @@ img{
 	}
 }
 
-
-
+/* 
 .logo-tanaka{
 	display:block;
 	margin: 0 auto;
@@ -70,8 +85,37 @@ img{
 	position: relative;
 	top: -350px; 
 	animation:logo 1.5s ease 1; 
+} */
+.logo-item{
+	position: relative;
 }
 
+.logo-tanaka{
+	display:block;
+	animation:logo 1.5s ease 1; 
+
+}	
+
+.logo--{
+	
+	display: block;
+
+	animation:logo 1.5s ease 1; 
+	margin-bottom: -40px;
+}
+
+.logo-cake{
+	
+	display: block;
+
+	animation:logo 1.5s ease 1; 
+}
+
+.logo-item:hover{
+
+	animation:swing 1s infinite	;
+
+}
 
 @keyframes logo{
 	0%{	
@@ -88,7 +132,7 @@ img{
 }
 
 @keyframes swing{
-	15%{transform: translatey(10px);}
+	15%{ transform: translatey(10px);}
 	40%{transform: translatey(-10px);}
 	65%{transform: translatey(5px);}
 	85%{transform: translatey(-5px);}
@@ -98,51 +142,32 @@ img{
 	
 
 
-a:hover .logo-item{
 
-	animation:swing 1s infinite	;
 
-}
-
-@media screen and (max-width: 575px){
+@media (min-width: 1200x){
 	.wrapper{
-	  max-width:100%;
+		width:1140px;
 	}
 
+  }
+
+  @media (max-width: 1199px){
+	.logo-item{
+		animation:swing 1s infinite;
+	}
+  }
+
+
+  @media (max-width: 767px){
 	.logo-bg{
-		max-width:300px;
-		max-height: 300px;
+		width:40vw;
+		height: 40vw;
 	}
-
-	.logo-item{
-		animation:swing 1s infinite;
+	
+	a{
+		width: 40vw;
 	}
-  }
-  @media (min-width: 576px) and (max-width: 767px){
-	.wrapper{
-	 width:540px;
+	.logo-cake{
+		width: 35%;
 	}
-	.logo-item{
-		animation:swing 1s infinite;
-	}
-
-  }
-  @media (min-width: 768px) and (max-width: 991px){
-	.wrapper{
-	 width:720px;
-	}
-	.logo-item{
-		animation:swing 1s infinite;
-	}
-  }
-  @media (min-width: 992px) and (max-width: 1200px){
-	.wrapper{
-	 width:960px;
-	}
-	.logo-item{
-		animation:swing 1s infinite;
-	}
-  }
-  @media (min-width: 1200x){
-	.wrapper{width:1140px;}
-  }
+}

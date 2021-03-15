@@ -7,26 +7,26 @@
 
 /*-----------header---------------*/
 
+.slider{
+	margin: 0 auto;
+	margin-top: 100px;
+}
+
 .slider img{
 	display: block;
 	margin:0 auto;
-	width: 1140px;
-	width: 100%;
+	width:100%;
 }
-.slider{
-	width: 1000px;
-
+.slider div{
+	
 	margin: 0 auto;
 }
-
 /*--------------story-----------------*/
 
 .story{
 	background-color: white;
 	height: 1070px;
 	border-top: 10px dotted #FFD668;
-	border-bottom: 10px dotted #FFD668;
-
 }
 	
 .story-tanaka{
@@ -66,23 +66,24 @@
 
 .story-main{
 	background-color: #FFF9C4;
-	padding:30px 0;
+	padding:50px 0;
 	position: relative;
 	top:-450px;	
 }
 
 .story-main div{
-	margin: 30px auto;
+	margin: 0 auto;
 	background-color: white;
 	border-radius:20px;
-	padding: 50px; 
+	padding: 30px; 
 	width: 900px;
 
 }
 
 .story-main h2{
 	text-align: center;
-	padding-bottom: 30px;
+	padding-bottom: -60px;
+	
 }
 
 .story-text{
@@ -93,11 +94,14 @@
 .section{
 	background-color: white;
 	border-bottom: 10px dotted #FFD668;
+	margin-top:-115px;
 }
 .section-main{
-	
 	text-align: center;
+}
 
+.section-main .main-rwd{
+	display: none;
 }
 
 .section-main img{
@@ -106,19 +110,19 @@
 
 .section-main ul{
 	display: flex;
-	justify-content: center;
+	justify-content:center;
 }
 .section h2 {
 	padding-top: 20px;
 }
 
 .a{
-	display: block;
+	padding:0 15px;
 	width:361px;
 	height:264px;
 }
-.b{
-	display: block;
+.b{	
+	padding:0 15px;
 	width:263px;
 	height:236px;
 }
@@ -129,13 +133,179 @@
 	margin:20px auto;
 	padding: 30px;}
 
-.section-main h2{
-	padding-bottom: 30px;
+.section-main h3{
+	padding:30px 20px 5px 5px;
 }
 
 .section-main p{
 	font-size: 16px;
 }
-h3{
-	padding: 20px 0;
+
+
+/* -----rwd----- */
+@media screen and (max-width: 575px){
+	.wrapper{
+		width: 100%;
+	}
+	.story-tanaka{
+		max-width:240px;
+		margin-top:24px;
+	}
+	
+	.story-diaTanaka{
+		max-width:138px;
+		right:100px;
+		top:-250px;
+	}
+	
+	.story-diaHello{
+		max-width:120px;
+		left:100px;
+		top:-290px;
+	}
+	
+	.story-diaCake{
+		
+		max-width:60px;
+		right:120px;
+		top:-340px;
+	}
+	.story-main{
+		background-color: #FFF9C4;
+		top:-260px;	
+	}
+	.story-main div{
+		max-width:300px;
+	}
+	.section{
+		margin-top:90px;
+	}
+	.section-main .main-top, .section-main .main-medium, .section-main .main-bottom, .section-main .cow{
+		display: none;
+	}
+
+	.section-main .main-rwd{
+		display: block;
+	
+	}
+	.img1-rwd img{
+		max-width: 300px;
+		margin: 0 auto;
+		border-radius: 20px 20px 0 0;
+	}
+	.img2-rwd{
+		display: flex;
+		justify-content: center;
+	}
+	.img2-rwd img{
+		max-width: 150px;
+	}
+	.tit-rwd{
+		width: 320px;
+		margin: 10px auto;
+		background-color: #FFF9C4;
+		width: 300px;
+	}
+	.img3-rwd img{
+		border-radius: 0 0 20px 20px;
+		margin: 0 auto;
+		max-width: 300px;
+	}
+	.section-main p{
+		font-size: 14px;
+		line-height: 25px;
+		padding-bottom: 20px;
+	}
+	.section-main .logo-icon{
+		max-width:50%;
+	}
 }
+@media (min-width: 576px) and (max-width: 767px){
+	.wrapper{
+		width: 100%;
+	}
+	
+	.story-tanaka{
+		max-width:320px;
+		margin-top:24px;
+	}
+	
+	.story-diaTanaka{
+		max-width:184px;
+		right:160px;
+		top:-280px;
+	}
+	
+	.story-diaHello{
+		max-width:192px;
+		left:160px;
+		top:-400px;
+	}
+	
+	.story-diaCake{
+		
+		max-width:80px;
+		right:160px;
+		top:-400px;
+	}
+	.story-main{
+		background-color: #FFF9C4;
+		top:-360px;	
+	}
+	.story-main div{
+		max-width: 540px;
+	}
+
+
+
+	.section-main .main-top, .section-main .main-medium, .section-main .main-bottom, .section-main .cow{
+		display: none;
+	}
+	.section-main .main-rwd{
+		display: block;
+	
+	}
+	.img1-rwd img{
+		margin: 0 auto;
+		border-radius: 20px 20px 0 0;
+	}
+	.img2-rwd{
+		display: flex;
+		justify-content: center;
+	}
+	.tit-rwd{
+		width: 400px;
+		margin: 10px auto;
+		background-color: #FFF9C4;
+		width: 400px;
+	}
+	.img3-rwd img{
+		border-radius: 0 0 20px 20px;
+		margin: 0 auto;
+	}
+	.section-main p{
+		font-size: 14px;
+		line-height: 25px;
+		padding-bottom: 20px;
+	}
+}	
+@media (min-width: 768px) and (max-width: 991px){
+	.wrapper{
+		max-width: 100%;
+	}
+
+
+	.story-main div{
+		max-width: 720px;
+	}
+	h3{
+		padding: 16px 0;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+	.wrapper{
+		width: 100%;
+	}
+
+}	

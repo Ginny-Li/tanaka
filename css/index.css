@@ -237,11 +237,15 @@ a{
 		height: 32px;
 		line-height: 32px;
 	}
+	.product p:hover{
+		position: relative;
+		top:-32px;
+	}
 	.about{
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		padding:180px 20px 150px;
+		padding:250px 20px 150px;
 	}
 	.about-tit{
 		display: none;
@@ -251,9 +255,9 @@ a{
 		text-align: center;
 	}
 	.tanaka{
-		max-width:320px;
-		max-height: 320px;
-		margin-top: -450px;
+		max-width:280px;
+		max-height: 280px;
+		margin-top: -405px;
 	}
 
 	.dia{
@@ -289,7 +293,6 @@ a{
 
   @media (min-width: 576px) and (max-width: 767px){
 	.wrapper{
-
 		width: 100%;
 	}
 
@@ -310,6 +313,11 @@ a{
 		width: 108px;
 		height: 36px;
 		line-height: 36px;
+	}
+
+	.product p:hover{
+		position: relative;
+		top:-36px;
 	}
 	
 	.about{
@@ -335,7 +343,7 @@ a{
 
 	.dia{
 		max-width:90%;
-		padding-right: 120px;
+		padding-right: 250px;
 		animation:swing 1s infinite;
 	}
 

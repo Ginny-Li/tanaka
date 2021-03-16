@@ -66,15 +66,15 @@ h3{
 /* ----------基本按鈕樣式---------- */
 
 button.hamburger_icon{
-	width: 31px;
-	height: 31px;
+	width: 30px;
+	height: 30px;
 	
 	position: relative;
 	cursor: pointer;
 	outline: none;
 	position: absolute;
 	float: right;
-	top:30px;
+	top:25px;
 	right: 85px;
 	border: transparent;
 	background-color: white;
@@ -197,7 +197,7 @@ nav{
 .nav ul a{
 	 
 	color: black;
-	
+	display: block;
  
 }
 
@@ -237,7 +237,7 @@ nav{
  .man {
 	float: right;
 	position: absolute;
-	top:30px;
+	top:25px;
 	right:50px;
 
 }
@@ -245,7 +245,7 @@ nav{
 .cart {
 	float: right;
 	position: absolute;
-	top:30px;
+	top:25px;
 	right:15px;
 
 } 

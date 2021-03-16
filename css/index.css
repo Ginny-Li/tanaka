@@ -92,17 +92,16 @@ a{
 	color:white;	
 } 
 .slick-prev:before, .slick-next:before {
-    font-family: 'slick';
     font-size: 40px;
-    line-height: 1;
-    opacity: .75;
+    opacity:1;
     color: #FFD668;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
 .slick-next {
-    right: -5px;
+    right: -20px;
+}
+.slick-prev{
+	left:-40px;
 }
 /*--------------about------------*/
 
@@ -221,15 +220,15 @@ a{
 	}
 
 	.news img{
-		max-width: 200px;
-		max-height: 200px;
+		max-width: 250px;
+		max-height: 250px;
 	}
 
 	.product{
 		max-width:70%;
 	}  
 	.product img{
-		max-width:150px;
+		max-width:200px;
 	}
 
 	.product li a{

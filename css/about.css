@@ -18,7 +18,6 @@
 	width:100%;
 }
 .slider div{
-	
 	margin: 0 auto;
 }
 /*--------------story-----------------*/
@@ -212,9 +211,9 @@
 		max-width: 300px;
 	}
 	.section-main p{
-		font-size: 14px;
+		font-size: 12px;
 		line-height: 25px;
-		padding-bottom: 20px;
+		padding:0 10px 20px ;
 	}
 	.section-main .logo-icon{
 		max-width:50%;

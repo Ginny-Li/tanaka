@@ -70,7 +70,7 @@ form p{
 input {
 	border:0px; 
 	border-radius: 5px;
-  	background-color: #FFFDED	;
+  	background-color: #FFFDED;
   	width: 260px;
   	height: 30px;
   	font-weight: bold;
@@ -150,9 +150,10 @@ input:invalid + .help-text {
 		max-width:120px ;
 	}
 	.qa p{
-		padding: 0;}
+		padding: 0;
+	}
 	form p{
-		font-size:16px;
+		font-size:14px;
 	}
 	.mail{
 		display: none;

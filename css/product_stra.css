@@ -1,7 +1,5 @@
 
-.s-tit{
-	color: #FBB646;
-}
+
 
 
 /*-------------nav------------*/
@@ -11,33 +9,17 @@
 
 /*-------------------product----------*/
 
-
-
-.product{
-	margin:0 auto;
-	background-image: url(../img/product/bg.png);
-	background-size: contain;
-}
-.product h2{
-
-}
-
-.product-main ul{
-	display: flex;
-	justify-content:space-around;
-	align-items:center;
-}
-
-.product-main{
+.cake-inf {
 	width: 800px;
 	background-color: white;
-	margin:30px auto 30px;
-	padding: 50px ;
+	margin:130px auto 30px;
+	padding:30px ;
 	border-radius: 20px;
+	position: relative;
 
 }
 
-.product-main a{
+.cake-inf a{
 	display: inline-block;
 	text-decoration: none;
 	background-color:  #FFD668;
@@ -45,15 +27,14 @@
 	text-align: center;
 	border-radius: 10px;
 	color: white;
-	margin-left: 30px;
-	margin-top: 10px;
+
 }
 
-.product-main a:hover{
+.cake-inf a:hover{
 	background-color:#FBB646 ;
 }
 
-.product-main .buy{
+.cake-inf .buy{
 	display: inline-block;
 	text-decoration: none;
 	background-color: #FF7D7D;
@@ -61,37 +42,51 @@
 	text-align: center;
 	border-radius: 10px;
 	color: white;
-	margin-left: 30px;
-	margin-top: 10px;
+	margin-right: 30px;
+
+
+
+}
+.cart-link{
+	display: flex;
+	justify-content:center;
+	margin-top: -30px;
+	margin-bottom: 30px;
+	margin-left: 150px;
 }
 
-.product-main .buy:hover{
+.cake-inf .buy:hover{
 	
 	background-color:#FBB646 ;
 }
-
-
-
-.cake-item .fa{
-	width: 50px;
-	height: 50px;
-	background-color:#FFD668;
-	color: white;
-	border-radius: 50%;
-	text-align: center;
-	line-height: 48px;
-	font-size: 1.5em;
-	cursor: pointer;
-	display: block;
+.cake-tit{
+	position: absolute;
+	top: 40px;
+	right: 20px;
+	z-index: 2;
+}
+.slider-nav{
+	padding-left:80px;
+}
+.slider-nav img{
+	max-width:120px;
+}
+.product-inf{
+	color: #FBB646;
+	background-color: transparent;
+	border: 0;
+	font-size: 20px;
+}
+ .slick-next:before {
+    font-size: 35px;
+    opacity:1;
+    color: #FFD668;
 }
 
-.cake-item .fa:hover{
-	background-color:#FF7D7D;
+.slick-next {
+    left:200px;
 }
 
-.cake-item{
-	padding-top: 20px;
-}
 
 input{
 	width: 50px;
@@ -109,9 +104,25 @@ input{
 input:focus{
 	outline: none;
 }
-
-/*----------ol---------------*/
-
+/* -----cake-inf-dropdownList-----   */
+.product-inf:focus{
+		outline: none;
+}
+.dropdownList {
+    display: none;
+	font-size: 16px;
+	padding: 10px;
+	background-color: white;
+	position:absolute;
+	top: 150px;
+}
+.dropdownList p{
+	color: #FBB646;
+	border-top: 2px solid  #FBB646 ;
+}
+.active {
+    display: block;
+}
 /*--------------maight-------*/
 
 
@@ -121,16 +132,12 @@ input:focus{
 	margin: 30px auto;
 	padding:0px ;
 	border-radius: 20px;
-}	
-
-
-.cake-item{
+}
+.maight-item{
+	padding-top: 20px;
 	display: flex;
 	justify-content: space-around;	
-}
-
-
-
+}	
 .maight-main p{
 	background-color:transparent;
 	width: 120px;
@@ -150,4 +157,116 @@ input:focus{
 .maight-main h3{
 	font-size: 20px;
 	padding: 30px 30px 0;
+}
+/* -----rwd----- */
+@media (min-width: 992px) and (max-width: 1199px){
+	.wrapper{
+		width: 100%;
+		border: 1px solid red;
+	}
+
+}
+@media (min-width:768px) and (max-width:991px){
+	.wrapper{
+		width: 100%;
+		border: 1px solid orange;
+	}.maight-main{
+		max-width: 700px;
+	}
+	.cake-inf{
+		max-width:700px;
+	}
+	.cake-tit{
+		width:380px;
+		top: 10px;
+		right: 30px;
+	}
+	.dropdownList {
+		top:200px;
+	}
+
+}
+@media (min-width: 576px) and (max-width: 767px){
+	.wrapper{
+		width: 100%;
+		border: 1px solid yellow;
+	}
+
+	}.maight-main{
+		max-width: 500px;
+	}
+	.cake-inf{
+		max-width:500px;
+		padding-top:250px;
+	}
+	.cake-tit{
+		padding-top: 30px;
+		width:380px;
+		top: 10px;
+		right: 50px;
+	}
+	.dropdownList {
+		top:200px;
+	}
+	.slider-for img{
+		margin: 20px auto 0;
+	}
+	.slider-nav{
+		padding:10px;
+	}
+	.slick-next {
+		left:350px;
+	}
+	.maight-main{
+		text-align: center;
+	}
+	.maight-item{
+		flex-direction: column;
+		align-items: center;
+	}
+@media screen and (max-width:575px){
+	.wrapper{
+		width: 100%;
+		border: 1px solid green;
+	}
+	.maight-main{
+		max-width: 300px;
+	}
+	.cake-inf{
+		max-width:300px;
+		padding-top:250px;
+	}
+	.cake-tit{
+		padding-top: 30px;
+		width:280px;
+		top: 10px;
+		right:5px;
+	}
+	.dropdownList {
+		top:240px;
+	}
+	.cart-link{
+		margin-top: -100px;
+		flex-direction: column;
+	}
+	.cake-inf .buy{
+		margin-bottom: 10px;
+	}
+	.slider-for img{
+		margin: 20px auto 0;
+	}
+	.slider-nav{
+		display: none;
+	}
+	.slick-next {
+		left:220px;
+	}
+	.maight-main{
+		text-align: center;
+	}
+	.maight-item{
+		flex-direction: column;
+		align-items: center;
+	}
+	
 }

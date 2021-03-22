@@ -14,8 +14,6 @@ body{
 
 img{
 	transition: all 0.5s;
-
-	
 }
 
 a{
@@ -80,7 +78,10 @@ button.hamburger_icon{
 	background-color: white;
 	border-radius: 50%;
 	display: none;
+
   }
+
+
   
 /* ----------每一條橫線的樣式 ----------*/
 button.hamburger_icon span.-hr{
@@ -179,7 +180,7 @@ nav{
 	position:fixed;
 	top: 0;
 	width: 100%;
-	z-index: 2;	
+	z-index:5;	
 	
 	
 }
@@ -253,12 +254,12 @@ nav{
 .man img{
 	display: block;
 	width: 30px;
-	transition: all 0.5s;
+
 }
 .cart img{
 	display: block;
 	width: 30px;
-	transition: all 0.5s;
+
 }
 
 .man :hover{
@@ -267,7 +268,14 @@ nav{
 .cart :hover{
 	transform:scale(1.2);
 }
-
+@media screen and (max-width:767px){
+	.man :hover{
+		transform:scale(1);
+	}
+	.cart :hover{
+		transform:scale(1);
+	}
+}
 /*------------footer-------------------*/
 
 footer{

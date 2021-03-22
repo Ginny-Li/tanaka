@@ -91,55 +91,7 @@
 .diy-main a:hover{
 	background-color: #FF7D7D;
 }
-
-
-
-/*=========class============*/
-body{
-	background-image: 
-	     linear-gradient(180deg, transparent 0%, transparent 10%, rgba(255,214,104,.1) 10%, rgba(255,214,104,.1) 100%),
-	     linear-gradient(90deg, transparent 0%, transparent 10%, rgba(255,214,104,.1) 10%, rgba(255,214,104,.1) 100%);
-	  
-	     background-size: 50px 50px, 50px 50px, auto auto;
-}
-
-.class img{
-	display: inline-block;
-}
-
-.class .diy-main {
-	margin: 0 auto;
-	width: 1000px;
-	border: 2px solid;
-}
-.s-tit{
-	color: #D7B974;
-}
-
-.class-inf{
-	width: 1000px;
-	background-color: white;
-	border-radius: 20px;
-	margin: 30px auto;
-}
-
-.class-inf h3{
-	padding:30px 100px;
-}
-
-.class-inf p{
-	padding-left:100px;
-}
-
-.class-inf p:last-child{
-	padding-bottom:50px;
-}
-
-.class .diy-main a{
-	margin-bottom: 10px;
-}
-
-/* -----rwd----- */
+/* -----diy rwd----- */
 @media (min-width: 992px) and (max-width: 1199px){
 	.wrapper{
 		width: 100%;
@@ -268,4 +220,158 @@ body{
 		left:-20px;
 	}
 
-}			
+}	
+
+
+/*=========class============*/
+body{
+	background-image: 
+	     linear-gradient(180deg, transparent 0%, transparent 10%, rgba(255,214,104,.1) 10%, rgba(255,214,104,.1) 100%),
+	     linear-gradient(90deg, transparent 0%, transparent 10%, rgba(255,214,104,.1) 10%, rgba(255,214,104,.1) 100%);
+	  
+	     background-size: 50px 50px, 50px 50px, auto auto;
+}
+.class{
+	margin-top:130px;
+}
+
+.class img{
+	display:block;
+	width: 200px;
+	margin: 0 auto;
+}
+.inf-tit{
+	width:500px;
+	margin: 0 auto;
+	text-align: center;
+}
+.class-slider{
+	width:900px;
+	margin: 0 auto;
+}
+.slick-center img{
+	width: 220px;
+}
+.s-tit{
+	color: #D7B974;
+}
+
+.class-inf{
+	width: 900px;
+	background-color: white;
+	border-radius: 20px;
+	margin: 30px auto;
+}
+
+
+.slick-next {
+    right: -20px;
+}
+.slick-prev{
+	left:-30px;
+}
+
+.class-inf {
+	text-align: left;
+	padding: 40px 50px 50px 50px;
+}
+ .class-inf h3{
+	padding-top:10px;
+}
+
+
+.class a{
+	display: block;
+	background-color: #FFD668;
+	color: white;
+	border-radius: 10px;
+	text-align: center;
+}
+
+/* ------class rwd-----*/
+@media (min-width: 992px) and (max-width: 1199px){
+	.wrapper{
+		width: 100%;
+	}
+}
+@media (min-width:768px) and (max-width:991px){
+	.wrapper{
+		width: 100%;
+
+	}
+	.class-inf{
+		max-width: 700px;
+	}
+	.class-slider{
+		max-width: 700px;
+
+	}
+	.class img{
+		max-width: 150px;
+	}
+	.slick-center img{
+		max-width: 180px;
+	}
+	.slick-next {
+		right:-15px;
+	}
+	.slick-prev{
+		left: 20px;
+	}
+
+}
+@media (min-width:576px) and (max-width: 767px){
+	.wrapper{
+		width: 100%;
+
+	}
+	.class-inf{
+		max-width: 500px;
+	}
+	.class-slider{
+		max-width: 500px;
+
+	}
+	.class img{
+		max-width: 100px;
+	}
+	.slick-center img{
+		max-width: 150px;
+	}
+	.slick-next {
+		right:-20px;
+	}
+	.slick-prev{
+		left:-30px;
+	}
+}
+@media screen and (max-width:575px){
+	.wrapper{
+		width: 100%;
+
+	}
+	.inf-tit{
+		max-width: 300px;
+	}
+	.class-inf{
+		max-width: 300px;
+		text-align: center;
+		padding:10px 15px;
+	}
+	.class-slider{
+		max-width: 300px;
+
+	}
+	.class img{
+		max-width: 120px;
+	}
+	.slick-center img{
+		max-width: 150px;
+	}
+	.slick-next {
+		right:30px;
+	}
+	.slick-prev{
+		left:20px;
+	}
+}				

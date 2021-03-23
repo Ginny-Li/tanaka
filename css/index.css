@@ -92,7 +92,7 @@ a{
 	color:white;	
 } 
 .slick-prev:before, .slick-next:before {
-    font-size: 35px;
+    font-size:40px;
     opacity:1;
     color: #FFD668;
 }
@@ -102,6 +102,10 @@ a{
 }
 .slick-prev{
 	left:-40px;
+}
+.slick-prev, .slick-next{
+	width: 40px;
+	height: 40px;
 }
 /*--------------about------------*/
 

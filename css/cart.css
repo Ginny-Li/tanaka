@@ -27,8 +27,9 @@ h2{
 	width: 150px;
 }
 
-.product-amount button{
+.product-amount input{
 	border: 0;
+	text-align:center;
 }
 .product-del{
 	color:#A9A8A8;
@@ -131,7 +132,6 @@ h2{
 @media (min-width:768px) and (max-width:991px){
 	.wrapper{
 		width: 100%;
-		border: 1px solid red;
 	}
 	.cart-main{
 		max-width: 700px;
@@ -148,7 +148,7 @@ h2{
 @media (min-width:576px) and (max-width:767px){
 	.wrapper{
 		width: 100%;
-		border: 1px solid blue;
+	
 	}
 	.cart-main{
 		max-width: 500px;
@@ -175,12 +175,11 @@ h2{
 @media screen and (max-width:575px){
 	.wrapper{
 		width: 100%;
-		border: 1px solid yellow;
 	}
 	.cart-main{
 		max-width: 310px;
 		padding:5px;
-		font-size: 13px;
+		font-size:13px;
 	}
 	.maight{
 		max-width: 300px;
@@ -200,6 +199,9 @@ h2{
 	}
 	.rwd-tit{
 		display: block;
+	}
+	.product-amount button{
+		border: 0;
 	}
 
 }

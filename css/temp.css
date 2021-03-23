@@ -151,20 +151,20 @@ button.hamburger_icon:focus{
 /* -----下拉式選單----- */
 
 .nav .ham-bar{
-	border:2px solid #FFD668;
+	/* border:2px solid #FFD668; */
 	display: inline-block;
-	background-color:white;
+	background-color:#FFF9C4;
 	text-align: center;
 	display: none;
 	margin-top:8px;
   } 
 
-.nav .ham-bar li{
+/* .nav .ham-bar li{
 	border-bottom: 2px solid #FFD668;
 } 
 .nav .ham-bar li:last-child{
 	border-bottom: 2px solid transparent;
-} 
+}  */
 
 .nav .ham-bar li:hover{
 	background-color: #FFD668;

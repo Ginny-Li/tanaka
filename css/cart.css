@@ -1,125 +1,98 @@
 .shop-cart{
 	margin-top:100px;
-
+	text-align:center;
 }
 h2{
-	text-align: center;
 	margin:30px auto;
 	padding-top: 30px;
 }
-
-
-.cart_header {
+.cart-main{
 	width: 900px;
-	background-color:white;
+	margin: 0 auto;
+	background-color:#FFF9C4;
+	border-radius: 20px;
+	padding:10px;
+}
+.tit.content{
+	color: #FF7D7D;
+}
+.content{
+	text-align: center;
 	display: flex;
-	margin: 5px auto;
+	justify-content: space-around;
+	background-color: white;
+	margin:10px;
+}
+.content li{
+	width: 150px;
 }
 
-
-
-.cart_header div{
-	padding-left: 100px;
-	
+.product-amount button{
+	border: 0;
 }
-
-button{
-	border: none;	
-	background-color:color: #A9A8A8;
-
+.product-del{
+	color:#A9A8A8;
 }
-
-button:focus{
-	outline:none;
-}
-
-button:hover{
-	color: #FFD668;
-}
-
-.fa{
-	font-size: 15px;
-}
-
-.del{
-	background-color: transparent;
-	color: #A9A8A8;
-}
-
-.del .fa{
-	font-size: 20px;
-}
-
-.price{
-	padding-left: 20px;
-}
-
 
 /*----maight----------------*/
 
 .maight{
-
+	width: 900px;
+	margin: 0 auto;
 }
 
 
 .maight-like{
-	padding-top: 20px;
+	padding:20px 0 5px;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content:start;
 }
-
+.maight-like li{
+	padding-left:240px;
+}
 .maight-like li:first-child{
-	padding-right: 450px;
-}
-.maight-like li:last-child{
-	padding-right: 100px;
+	padding-right:70px;
 }
 
 .maight-main{
-		
 	display: flex;
-	justify-content:center;
+	justify-content:space-around;
 }
 
-.main-icon{
-	padding-top: 20px;
-	padding-left: 10px;
-}
+
+/*-----main-total--------------*/
 
 .main-total{
-
-}
-
-.main-pic{
 	display: flex;
-
-
+	flex-direction:column;
+	align-items: center;
+	color:#FBB646;
 }
-.main-pic div{
-	margin-left: 10px;
-}
-
-/*-----a--------------*/
-
-
 .main-total a{
 	display: block;
-	background-color:  #FFD668;
+	background-color: #FFD668;
 	width: 120px;
 	height: 40px;
 	text-align: center;
 	border-radius: 10px;
 	color: white;
-	margin-left: 30px;
-	margin-bottom:20px;
+	margin:5px
 }
-
-.main-total a:hover{
+.main-total a:last-child{
 	background-color: #FF7D7D;
 }
 
+.main-total a:hover{
+	background-color:#FBB646;
+}
 
+.main-total .total{
+	background-color:#FFF9C4;
+	border-radius: 10px;
+	width: 120px;
+	height:40px;
+	margin-bottom: 5px;
+}
 
 .main-pic a:hover p{
 	background-color:  #FFD668;
@@ -130,7 +103,6 @@ button:hover{
 	font-size: 18px;
 	margin: 0 auto;
 		position: relative;
-
 		top:-80px; 	
 }
 
@@ -138,4 +110,96 @@ button:hover{
 .main-pic a p{
 	background-color:transparent;
 	color:transparent;
+}
+.main-pic{
+	display: flex;
+}
+.main-pic div{
+	margin-left: 10px;
+}
+.rwd-tit{
+	display: none;
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+	.wrapper{
+		width: 100%;
+		border: 1px solid;
+	}
+
+}
+@media (min-width:768px) and (max-width:991px){
+	.wrapper{
+		width: 100%;
+		border: 1px solid red;
+	}
+	.cart-main{
+		max-width: 700px;
+	}
+	.maight{
+		max-width: 700px;
+		padding-top:30px;
+	}
+	.maight-like{
+		display: none;
+	}
+
+}
+@media (min-width:576px) and (max-width:767px){
+	.wrapper{
+		width: 100%;
+		border: 1px solid blue;
+	}
+	.cart-main{
+		max-width: 500px;
+	}
+	.maight{
+		max-width: 500px;
+		padding-top:30px;
+	}
+	.maight-like{
+		display: none;
+	}
+	.maight-main{
+		flex-direction: column;
+	}
+	.main-total{
+		flex-direction: row;
+		justify-content: center;
+		margin-bottom: 30px;
+	}
+	.rwd-tit{
+		display: block;
+	}
+}
+@media screen and (max-width:575px){
+	.wrapper{
+		width: 100%;
+		border: 1px solid yellow;
+	}
+	.cart-main{
+		max-width: 310px;
+		padding:5px;
+		font-size: 13px;
+	}
+	.maight{
+		max-width: 300px;
+		padding-top:30px;
+	}
+	.maight-like{
+		display: none;
+	}
+	.maight-main{
+		flex-direction:column;
+	}
+	.main-pic{
+		flex-direction: column;
+	}
+	.main-total{
+		margin-bottom: 30px;
+	}
+	.rwd-tit{
+		display: block;
+	}
+
 }

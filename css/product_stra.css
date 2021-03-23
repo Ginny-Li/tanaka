@@ -44,8 +44,6 @@
 	color: white;
 	margin-right: 30px;
 
-
-
 }
 .cart-link{
 	display: flex;
@@ -162,14 +160,12 @@ input:focus{
 @media (min-width: 992px) and (max-width: 1199px){
 	.wrapper{
 		width: 100%;
-		border: 1px solid red;
 	}
 
 }
 @media (min-width:768px) and (max-width:991px){
 	.wrapper{
 		width: 100%;
-		border: 1px solid orange;
 	}.maight-main{
 		max-width: 700px;
 	}
@@ -189,10 +185,9 @@ input:focus{
 @media (min-width: 576px) and (max-width: 767px){
 	.wrapper{
 		width: 100%;
-		border: 1px solid yellow;
 	}
 
-	}.maight-main{
+	.maight-main{
 		max-width: 500px;
 	}
 	.cake-inf{
@@ -224,10 +219,10 @@ input:focus{
 		flex-direction: column;
 		align-items: center;
 	}
+}	
 @media screen and (max-width:575px){
 	.wrapper{
 		width: 100%;
-		border: 1px solid green;
 	}
 	.maight-main{
 		max-width: 300px;

@@ -37,6 +37,13 @@ h2{
 	color:#A9A8A8;
 }
 
+.none.-show{
+	display: block;
+}
+.none{
+	display: none;
+}
+
 /*----maight----------------*/
 
 .maight{
@@ -127,7 +134,6 @@ h2{
 @media (min-width: 992px) and (max-width: 1199px){
 	.wrapper{
 		width: 100%;
-		border: 1px solid;
 	}
 
 }

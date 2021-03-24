@@ -55,14 +55,19 @@
 				<li class="total">單項總計</li>
 				<li class="operate">操作</li>
 			</ul>
-
-			<ul class="product content">
-				<li class="paroduc-name">莓麗甜心</li>
-				<li class="product-price">NT300</li>
-				<li class="product-amount"> <input class="amount-number" type="number" name="" placeholder="1" min="1" max="10"></li>
-				<li class="product-total">NT300</li>
-				<li class="product-del"><i class="fa fa-trash" aria-hidden="true"></i></li>
-			</ul>
+			<p class="none">目前無商品</p>
+			<form id="form">
+                <ul class="product content">
+                    <li class="paroduc-name">莓麗甜心</li>
+                    <li class="product-price">NT <em id="price">400</em> </li>
+                    <li class="product-amount"> 
+                    <input class="amount-number" type="number" name="" id="number" placeholder="1" min="1" max="10" onchange="calculatePrice()"></li>
+                    <li class="product-total">共NT <em id="product-total">400</em></li>
+					<li class="product-del"><i class="del fa fa-trash" aria-hidden="true"></i></li>
+                </ul>
+				
+          
+            </form>
 		
 		</div>
 <!--------------maight------------ -->
@@ -81,7 +86,7 @@
 				</li>	
 				<h3 class="rwd-tit">購物車金額</h3>
 				<li class="main-total">
-					<p class="total">總計:NT<span>600</span></p>
+					<p class="total">總計:NT<em id ="total">400</em></p>
 					<a href="./product.html">繼續購物</a>
 					<a class="buy" href="#">前往結帳</a>
 				</li>
@@ -143,20 +148,41 @@
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script>
 		 $(function(){
-  // 點擊按鈕，選單縮放
+  		// 點擊按鈕，選單縮放
             $("button.hamburger_icon").on("click", function(){
                 $(".nav ul.ham-bar").slideToggle();
                  });
             });
 
          $(function(){
-  // 按鈕狀態的切換
+  		// 按鈕狀態的切換
             $("button.hamburger_icon").on("click", function(){
     
                 $(this).toggleClass("-on");
     
             });
         });
+		//移除購物車
+		$(".del").on("click",function(){
+            $(this).closest("ul").fadeOut(1000,function(){
+              if(  $(this).remove()){
+				document.getElementById("total").textContent = 0;
+				$(".none").addClass("-show");
+			  }
+            })
+        });
+
+
+	//購物車計算
+		function calculatePrice(){
+			const formElement = document.getElementById("form");
+			var Amount = formElement[0].value;
+			let Price =parseInt(document.getElementById("price").innerText);
+			var ProductPrice = Price * Amount ;
+			document.getElementById("product-total").textContent =ProductPrice;
+			document.getElementById("total").textContent = ProductPrice;
+        }
+
 	</script>	
 
 </body>

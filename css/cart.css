@@ -27,10 +27,12 @@ h2{
 	width: 150px;
 }
 
-.product-amount input{
+.amount-number{
 	border: 0;
 	text-align:center;
+	font-size: 20px;
 }
+
 .product-del{
 	color:#A9A8A8;
 }
@@ -202,6 +204,9 @@ h2{
 	}
 	.product-amount button{
 		border: 0;
+	}
+	.amount-number{
+		font-size:13px ;
 	}
 
 }

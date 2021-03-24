@@ -269,13 +269,10 @@ a{
 		max-width:80%;
 	}
 
-	.diy-pic{
-		display: flex;
-		flex-direction: column;
-	}
+
 	.diy-pic img{
 		box-sizing: content-box;
-		max-width:180px;	
+		max-width:80px;	
 	}
 	.flag{
 		max-width: 300px;

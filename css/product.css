@@ -22,6 +22,9 @@ body{
 .nav .product-btn a{
 	color: white;
 }
+.nav .p-btn a{
+	color:#FFD668
+}
 
 /*-----------product------------------*/
  .product-item h2{

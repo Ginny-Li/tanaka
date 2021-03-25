@@ -6,6 +6,9 @@
 .nav .product-btn a{
 	color: white;
 }
+.nav .p-btn a{
+	color:#FFD668
+}
 
 /*-------------------product----------*/
 
@@ -112,7 +115,7 @@ input:focus{
 	padding: 10px;
 	background-color: white;
 	position:absolute;
-	top: 150px;
+	top: 200px;
 }
 .dropdownList p{
 	color: #FBB646;
@@ -178,7 +181,7 @@ input:focus{
 		right: 30px;
 	}
 	.dropdownList {
-		top:200px;
+		top:230px;
 	}
 
 }
@@ -201,7 +204,7 @@ input:focus{
 		right: 50px;
 	}
 	.dropdownList {
-		top:200px;
+		top:250px;
 	}
 	.slider-for img{
 		margin: 20px auto 0;

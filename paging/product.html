@@ -11,7 +11,8 @@
 	<link rel="stylesheet" href="../css/temp.css">
 	<link rel="stylesheet" href="../css/product.css">
 	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="../img/favicon-16x16.png" type="image/png">	
+	<link rel="icon" href="../img/favicon-16x16.png" type="image/png">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />	
 
 </head>
 <body>
@@ -27,10 +28,10 @@
 				</ul>	
 					
 				<ul class="ham-bar">
-					<li><a href="about.html">品牌故事</a></li>
-					<li><a href="product.html">商品列表</a></li>
-					<li><a href="Q&A.html">相關問題</a></li>
-					<li><a href="diy.html">手做小教室</a></li>
+					<li class="a-btn"><a href="about.html">品牌故事</a></li>
+					<li class="p-btn"><a href="product.html"><i class="fa fa-cutlery" aria-hidden="true"></i> 商品列表</a></li>
+					<li class="q-btn"><a href="Q&A.html">相關問題</a></li>
+					<li class="d-btn"><a href="diy.html">手做小教室</a></li>
 				</ul>
 				
 				<div class="man"><a href="#"><img src="../img/index/man.png" alt=""></a></div>
@@ -44,7 +45,7 @@
 	</nav>
 
 		<!-- ---------------header-------------- -->
-		<header>
+		<header data-aos="fade-down" data-aos-offset="200"> 
 			
 			<div class="wrapper">
 				<div class="slider">
@@ -60,7 +61,7 @@
 		<div class="product-item wrapper">
 			<h2>季節限定</h2>
 				
-			<ul class="product">
+			<ul class="product" data-aos="fade-right" data-aos-offset="200">
 				
 				<li class="cake1">
 					<img src="../img/index/cake1.png" alt="">	
@@ -90,7 +91,7 @@
 	
 			<h2>熱門商品</h2>
 				
-			<ul class="product">
+			<ul class="product" data-aos="fade-right" data-aos-offset="200">
 				
 				<li class="cake1">
 					<img src="../img/product/cake4.png" alt="">		
@@ -117,7 +118,7 @@
 			</ul>
 			<h2>手作餅乾</h2>
 				
-			<ul class="product">
+			<ul class="product" data-aos="fade-right" data-aos-offset="200">
 				
 			<li class="cake1">				
 				<img src="../img/product/cookie4.png" alt="">
@@ -232,6 +233,7 @@
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script>
         $(function(){
   // 點擊按鈕，選單縮放
@@ -284,7 +286,10 @@
              }
          },] 
 		});
-	</script>		
+	</script>
+	<script>
+		AOS.init();
+	</script>			
 </body>
 </html>
 			  

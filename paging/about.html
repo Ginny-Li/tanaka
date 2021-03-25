@@ -11,7 +11,8 @@
 	<link rel="stylesheet" href="../css/temp.css">
 	<link rel="stylesheet" href="../css/about.css">
 	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="../img/favicon-16x16.png" type="image/png">	
+	<link rel="icon" href="../img/favicon-16x16.png" type="image/png">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />	
 
 </head>
 <body>
@@ -30,10 +31,10 @@
 			
 			
 			<ul class="ham-bar">
-				<li><a href="about.html">品牌故事</a></li>
-				<li><a href="product.html">商品列表</a></li>
-				<li><a href="Q&A.html">相關問題</a></li>
-				<li><a href="diy.html">手做小教室</a></li>
+				<li class="a-btn"><a href="about.html"><i class="fa fa-cutlery" aria-hidden="true"></i> 品牌故事</a></li>
+				<li class="p-btn"><a href="product.html">商品列表</a></li>
+				<li class="q-btn"><a href="Q&A.html">相關問題</a></li>
+				<li class="d-btn"><a href="diy.html">手做小教室</a></li>
 			</ul>
 			
 			<div class="man"><a href="#"><img src="../img/index/man.png" alt=""></a></div>
@@ -47,7 +48,7 @@
 	</nav>
 
 		<!-- ---------------header-------------- -->
-	<header>
+	<header data-aos="fade-down" data-aos-offset="200"> 
 		<div class="wrapper">
 			<div class="slider">
 				<div><img src="../img/index/slider2.png" alt=""></div>
@@ -59,10 +60,10 @@
 	</header>
 		<!-- --------------story------------- -->
 	<div class="story wrapper">
-		<img class="story-tanaka" src="../img/about/TANAKA.png" alt="">
-		<img class="story-diaTanaka" src="../img/about/dia-tanaka.png" alt="">
-		<img class="story-diaHello" src="../img/about/dia-hello.png" alt="">
-		<img class="story-diaCake" src="../img/about/dai-cake.png" alt="">
+		<img class="story-tanaka" src="../img/about/TANAKA.png" alt="" data-aos="fade-up" data-aos-offset="200" >
+		<img class="story-diaTanaka" src="../img/about/dia-tanaka.png" alt="" data-aos="fade-up-right" data-aos-offset="200" data-aos-delay="50">
+		<img class="story-diaHello" src="../img/about/dia-hello.png" alt=""data-aos="fade-up-left" data-aos-offset="200" data-aos-delay="100">
+		<img class="story-diaCake" src="../img/about/dai-cake.png" alt="" data-aos="fade-up-right" data-aos-offset="200" data-aos-delay="150">
 		
 		<div class="story-main">
 			<div class="story-text">
@@ -86,7 +87,7 @@
 
 		
 	<div class="section wrapper">
-		<div class="section-main">
+		<div class="section-main" data-aos="fade-right" data-aos-offset="200" >
 			<h2>我們的堅持</h2>
 			<ul class="main-top">
 				<li><img src="../img/about/cake.png" alt=""></li>
@@ -198,6 +199,7 @@
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script>
         $(function(){
   // 點擊按鈕，選單縮放
@@ -226,6 +228,10 @@
 					autoplay:true,
 					arrows:false,
 		});		
+	</script>
+
+	<script>
+		AOS.init();
 	</script>		
 		
 </body>

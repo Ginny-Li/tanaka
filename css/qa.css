@@ -10,7 +10,9 @@ background-image:
 .nav .qa-btn a{
 	color: white;
 }
-
+.nav .q-btn a{
+	color:#FFD668
+}
 /*-----------qa----------------*/
 .qa p{
 	padding-bottom: 30px;

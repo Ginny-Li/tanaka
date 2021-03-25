@@ -95,6 +95,7 @@ button.hamburger_icon span.-hr{
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
+	transition: all 0.5s;
   }
   
 /* ----------最上面那條線的樣式---------- */
@@ -153,21 +154,16 @@ button.hamburger_icon:focus{
 /* -----下拉式選單----- */
 
 .nav .ham-bar{
-	/* border:2px solid #FFD668; */
 	display: inline-block;
 	background-color:#FFF9C4;
 	text-align: center;
 	display: none;
 	margin-top:8px;
   } 
-
-/* .nav .ham-bar li{
-	border-bottom: 2px solid #FFD668;
-} 
-.nav .ham-bar li:last-child{
-	border-bottom: 2px solid transparent;
-}  */
-
+  .nav .ham-bar li{
+	  height:100px;
+	  line-height: 100px;
+  }
 .nav .ham-bar li:hover{
 	background-color: #FFD668;
 } 
@@ -272,10 +268,10 @@ nav{
 }
 @media screen and (max-width:767px){
 	.man :hover{
-		transform:scale(1);
+		pointer-events: none;
 	}
 	.cart :hover{
-		transform:scale(1);
+		pointer-events: none;
 	}
 }
 /*------------footer-------------------*/

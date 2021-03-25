@@ -10,7 +10,7 @@
   	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/temp.css">
 	<link rel="stylesheet" href="css/index.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  
 
 </head>
 <style>
@@ -89,9 +89,133 @@ button.hamburger_icon.-on span.-hr.-bottom{
 	.list-a, .list-b, .list-c, .list-d{
         display: none;
 	}
+}	
 
-   
-  }	
+button:focus{
+  outline: 0;
+}
+.popup-wrap {
+  width: 100%;
+  height: 100%;
+  /* display: none; */
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  content: '';
+}
+
+.popup-box {
+  width: 40%;
+  height: 60%;
+  transform: translate(-50%, -50%);
+  padding-top:50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.5);
+  background-image: url("./img/product/bg.png");
+  background-size: cover;
+  text-align: center;
+}
+.popup-box img{
+  padding-top: 20px;
+}
+
+.close-btn {
+  position:absolute;
+  top:0px;
+  right:20px;
+  font-size:30px;
+}
+.login-form{
+  font-size: 16px;
+  height: 350px;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: -7px;
+  border-radius: 30px;
+  padding: 20px;
+  background-color: white;
+  border:15px solid #FFD668;
+}
+.popup-wrap form input{
+  border-radius: 5px;
+  border: 0;
+  background-color: #FFF9C4;
+  padding-top:5px;
+  margin-top:20px;
+}
+.login{
+  background-color:#FFD668;
+  border: 0;
+  border-radius:10px;
+  font-size: 16px;
+  color:white;
+  width:60px;
+}
+.checkbox a{
+  padding-left:20px;
+}
+.signup{
+  background-color:#FF7D7D;
+  border: 0;
+  border-radius:10px;
+  font-size: 16px;
+  color:white;
+  width:60px;
+}
+.btns button{
+  width: 120px;
+  border: 0;
+  background-color:#FFFDED;
+}
+.fa-google{
+  color: firebrick;
+}
+.fa-facebook-official{
+  color:dodgerblue;
+}
+.popup-wrap form .checkbox{
+  font-size: 12px;
+}
+input:valid {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-image: url("data:image/svg+xml,%3Csvg width='45px' height='34px' viewBox='0 0 45 34' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg transform='translate%28-56.000000, -59.000000%29' fill='%232EEC96'%3E%3Cpolygon points='70.1468531 85.8671329 97.013986 59 100.58042 62.5664336 70.1468531 93 56 78.8531469 59.5664336 75.2867133'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+}
+
+.signup-form{
+  font-size: 16px;
+  height: 350px;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: -7px;
+  border-radius: 30px;
+  padding: 20px;
+  background-color: white;
+  border:15px solid #FF7D7D;
+  display: none;
+}
+
+form p {
+  position: relative;
+}
+
+ label {
+  position: absolute;
+  top: -10px;
+  left: 40px;
+}
+
+.signup-form.on{
+  display:block;
+}
+
+.login-form.off{
+  display:none;
+}
+
 
 </style>
 <body>
@@ -116,7 +240,7 @@ button.hamburger_icon.-on span.-hr.-bottom{
                 <li><a href="./paging/diy.html">手做小教室</a></li>
             </ul>
 			
-			<div class="man"><a href="#"><img src="img/index/man.png" alt=""></a></div>
+			<div class="man"><a class="btn popup-btn" href="#letmeopen"><img src="img/index/man.png" alt=""></a></div>
 		    <div class="cart"><a href="./paging/cart.html#"><img src="img/index/shoopingCart.png" alt=""></a></div>
             <button type="button" class="hamburger_icon">
                 <span class="-hr -top"></span>
@@ -127,14 +251,37 @@ button.hamburger_icon.-on span.-hr.-bottom{
 		</div>	
 	</nav>
 
-  <!-- ----------------------------------popup------ -->
-  <div class="popup-wrap" id="login">
+  <div class="popup-wrap" id="letmeopen">
     <div class="popup-box transform-out">
-      <h2>登入</h2>
-       
-      <a class="close-btn popup-close" href="#">x</a>
+      <button class="login">登入</button> <button class="signup">註冊</button>
+        <form action="" class="login-form">
+          <p><input type="account" required><label for="">帳號:</label></p>
+         
+          <p> <input type="password" required><label for="">密碼:</label></p>
+          <div class="checkbox"><input type="checkbox">記住我<a href="#">忘記密碼</a></div>
+          <div class="btns">
+            <button>Log in with <i class="fa fa-facebook-official" aria-hidden="true"></i></button><br>
+            <button>Log in with <i class="fa fa-google" aria-hidden="true"></i></button><br>
+            <button>Log in</button>
+          </div>
+        </form>
+
+        <form action="" class="signup-form">
+          <p> <input type="email" required><label for="">信箱:</label></p>
+          <p> <input type="password" required><label for="">密碼:</label></p>
+          <p> <input type="password" required><label for="">確認密碼:</label></p>
+          <div class="btns">
+            <button>Sign up with <i class="fa fa-facebook-official" aria-hidden="true"></i></button><br>
+            <button>Sign up with <i class="fa fa-google" aria-hidden="true"></i></button><br>
+            <button>Sign up</button>
+          </div>
+        </form>
+      <a class="close-btn popup-close" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
     </div>
   </div>
+
+  <!-- ----------------------------------popup------ -->
+ 
 
 
 
@@ -143,7 +290,7 @@ button.hamburger_icon.-on span.-hr.-bottom{
     <script>
         $(function(){
   // 點擊按鈕，選單縮放
-            $("button").on("click", function(){
+            $(".nav button").on("click", function(){
                 $(".nav ul.ham-bar").slideToggle();
                  });
             });
@@ -156,5 +303,26 @@ button.hamburger_icon.-on span.-hr.-bottom{
     
             });
         });
+        $(".popup-btn").click(function() {
+          var href = $(this).attr("href")
+          $(href).fadeIn(250);
+        });
+
+        $(".popup-close").click(function() {
+          $(".popup-wrap").fadeOut(200);
+          e.preventDefault();
+        });
+
+        $(".signup").on("click",function(){
+          $(".login-form").addClass("off");
+          $(".signup-form").addClass("on"); 
+        });
+        $(".login").on("click",function(){
+          $(".signup-form").removeClass("on");
+          $(".login-form").removeClass("off");
+        });
+
+       
+
     </script>
 </html>    

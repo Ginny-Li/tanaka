@@ -177,10 +177,7 @@ nav{
 	width: 100%;
 	z-index:5;	
 	
-	
 }
-
-
 
 .nav{
 	max-width: 1140px;
@@ -357,3 +354,136 @@ footer ul p{
 	
 	}
 }
+
+
+
+/* -----popup member----- */
+button:focus{
+	outline: 0;
+  }
+.popup-wrap {
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	content: '';
+	z-index: 5;
+	background-color:#FFFDED;
+  }
+
+.popup-box {
+	min-width: 320px;
+	width: 50%;
+	height: 80%;
+	transform: translate(-50%, -50%);
+	padding-top:150px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.5);
+	background-image: url("../img/product/bg.png");
+	background-size: cover;
+	text-align: center;
+  }
+.popup-box img {
+	position: absolute;
+	top: 0;
+	padding: 30px 0;
+  }
+  
+.close-btn {
+	position:absolute;
+	top:0px;
+	right:20px;
+	font-size:30px;
+  }
+.login-form{
+	font-size: 16px;
+	height: 350px;
+	width: 300px;
+	margin: 0 auto;
+	margin-top: -7px;
+	border-radius: 30px;
+	padding:20px;
+	background-color: white;
+	border:15px solid #FFD668;
+  }
+.popup-wrap form input{
+	border-radius: 5px;
+	border: 0;
+	background-color: #FFF9C4;
+	padding-top:5px;
+	margin-top:20px;
+  }
+.login{
+	background-color:#FFD668;
+	border: 0;
+	border-radius:10px;
+	font-size: 16px;
+	color:white;
+	width:60px;
+  }
+.checkbox a{
+	padding-left:20px;
+  }
+.signup{
+	background-color:#FF7D7D;
+	border: 0;
+	border-radius:10px;
+	font-size: 16px;
+	color:white;
+	width:60px;
+  }
+.btns button{
+	width: 120px;
+	border: 0;
+	background-color:#FFFDED;
+  }
+.fa-google{
+	color: firebrick;
+  }
+.fa-facebook-official{
+	color:dodgerblue;
+  }
+.popup-wrap form .checkbox{
+	font-size: 12px;
+  }
+input:valid {
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right;
+	background-image: url("data:image/svg+xml,%3Csvg width='45px' height='34px' viewBox='0 0 45 34' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg transform='translate%28-56.000000, -59.000000%29' fill='%232EEC96'%3E%3Cpolygon points='70.1468531 85.8671329 97.013986 59 100.58042 62.5664336 70.1468531 93 56 78.8531469 59.5664336 75.2867133'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+  }
+  
+.signup-form{
+	font-size: 16px;
+	height: 350px;
+	width: 300px;
+	margin: 0 auto;
+	margin-top: -7px;
+	border-radius: 30px;
+	padding: 20px;
+	background-color: white;
+	border:15px solid #FF7D7D;
+	display: none;
+  }
+  
+form p {
+	position: relative;
+  }
+  
+label {
+	position: absolute;
+	top: -10px;
+	left: 40px;
+  }
+  
+.signup-form.on{
+	display:block;
+  }
+  
+.login-form.off{
+	display:none;
+  }

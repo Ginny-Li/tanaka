@@ -34,7 +34,7 @@
 					<li class="d-btn"><a href="diy.html">手做小教室</a></li>
 				</ul>
 				
-				<div class="man"><a href="#"><img src="../img/index/man.png" alt=""></a></div>
+				<div class="man"><a class="btn popup-btn" href="#open"><img src="../img/index/man.png" alt=""></a></div>
 				<div class="cart"><a href="cart.html"><img src="../img/index/shoopingCart.png" alt=""></a></div>
 				<button type="button" class="hamburger_icon">
 					<span class="-hr -top"></span>
@@ -43,191 +43,220 @@
 				  </button>
 			</div>
 	</nav>
-
-		<!-- ---------------header-------------- -->
-		<header data-aos="fade-down" data-aos-offset="200"> 
-			
-			<div class="wrapper">
-				<div class="slider">
-					<div><img src="../img/product/slider1.png" alt=""></div>
-					<div><img src="../img/product/slider2.png" alt=""></div>
-					<div><img src="../img/product/slider3.png" alt=""></div>
-					<div><img src="../img/product/slider4.png" alt=""></div>
+		<!-- -----popuu member----- -->
+	<div class="popup-wrap" id="open">
+		<div class="popup-box transform-out">
+		<img src="../img/index/logo.png" alt="">
+		<button class="login">登入</button> <button class="signup">註冊</button>
+			<form action="" class="login-form">
+				<p><input type="account" required><label for="">帳號:</label></p>
+				<p> <input type="password" required><label for="">密碼:</label></p>
+				<div class="checkbox"><input type="checkbox">記住我<a href="#">忘記密碼</a></div>
+				<div class="btns">
+					<button>Log in with <i class="fa fa-facebook-official" aria-hidden="true"></i></button><br>
+					<button>Log in with <i class="fa fa-google" aria-hidden="true"></i></button><br>
+					<button>Log in</button>
 				</div>
-			</div>
-		</header>
-		<!-- --------------product------------- -->
-		
-		<div class="product-item wrapper">
-			<h2>季節限定</h2>
-				
-			<ul class="product" data-aos="fade-right" data-aos-offset="200">
-				
-				<li class="cake1">
-					<img src="../img/index/cake1.png" alt="">	
-							<a href="">草莓天使<p>我要購買</p></a>
-							
-				</li>
-				<li class="cake2">
-					<img src="../img/index/cake2.png" alt="">
-					<a href="#">有莓有草莓<p>我要購買</p></a>
-				</li>
-				<li class="cake3">
-					<img src="../img/index/cake3.png" alt="">
-							<a href="#">巧克力莓莓<p>我要購買</p></a>
-				</li>
-				<li class="cake4">
-				
-					<img src="../img/index/cake4.png" alt="">
-					<a href="product_stra1.html">莓麗甜心<p>我要購買</p></a>		
-				</li>
-				<li class="cake5">
-					<img src="../img/index/cake5.png" alt="">	
-							<a href="#">草莓拿鐵<p>我要購買</p></a>
-				</li>
-
-				
-			</ul>
+			</form>
 	
-			<h2>熱門商品</h2>
-				
-			<ul class="product" data-aos="fade-right" data-aos-offset="200">
-				
-				<li class="cake1">
-					<img src="../img/product/cake4.png" alt="">		
-					<a href="#">提拉米蘇<p>我要購買</p></a>		
-				</li>
-				<li class="cake2">
-					<img src="../img/product/cake5.png" alt="">
-					<a href="#">招牌生乳酪<p>我要購買</p></a>
-				</li>
-				<li class="cake3">
-					<img src="../img/product/cake2.png" alt="">
-					<a href="#">小山園抹茶<p>我要購買</p></a>
-				</li>
-				<li class="cake4">
-					<img src="../img/product/cake3.png" alt="">	
-					<a href="">傑利的起司<p>我要購買</p></a>
-						</li>
-				<li class="cake5">
-					<img src="../	img/product/cake1.png" alt="">	
-					<a href="#">黑富士山<p>我要購買</p></a>
-				</li>
-
-				
-			</ul>
-			<h2>手作餅乾</h2>
-				
-			<ul class="product" data-aos="fade-right" data-aos-offset="200">
-				
-			<li class="cake1">				
-				<img src="../img/product/cookie4.png" alt="">
-				<a href="">初戀的感覺<p>我要購買</p></a>			
-			</li>
-		
-			<li class="cake3">
-				<img src="../img/product/cookie2.png" alt="">
-				<a href="">熊熊派對<p>我要購買</p></a>
-			</li>
-
-			<li class="cake4">
-				<img src="../img/product/cookie3.png" alt="">	
-				<a href="">花生熊麼事<p>我要購買</p></a>
-			</li>
-
-			<li class="cake5">
-				<img src="../	img/product/cookie1.png" alt="">	
-				<a href="#">黑炭小精靈<p>我要購買</p></a>
-			</li>
-
-			
-		</ul>	
+			<form action="" class="signup-form">
+				<p> <input type="email" required><label for="">信箱:</label></p>
+				<p> <input type="password" required><label for="">密碼:</label></p>
+				<p> <input type="password" required><label for="">確認密碼:</label></p>
+				<div class="btns">
+					<button>Sign up with <i class="fa fa-facebook-official" aria-hidden="true"></i></button><br>
+					<button>Sign up with <i class="fa fa-google" aria-hidden="true"></i></button><br>
+					<button>Sign up</button>
+				</div>
+			</form>
+			<a class="close-btn popup-close" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+		</div>
 	</div>
+
+	<!-- ---------------header-------------- -->
+	<header data-aos="fade-down" data-aos-offset="200"> 
+		
+		<div class="wrapper">
+			<div class="slider">
+				<div><img src="../img/product/slider1.png" alt=""></div>
+				<div><img src="../img/product/slider2.png" alt=""></div>
+				<div><img src="../img/product/slider3.png" alt=""></div>
+				<div><img src="../img/product/slider4.png" alt=""></div>
+			</div>
+		</div>
+	</header>
+	<!-- --------------product------------- -->
 	
+	<div class="product-item wrapper">
+		<h2>季節限定</h2>
+			
+		<ul class="product" data-aos="fade-right" data-aos-offset="200">
+			
+			<li class="cake1">
+				<img src="../img/index/cake1.png" alt="">	
+						<a href="">草莓天使<p>我要購買</p></a>
+						
+			</li>
+			<li class="cake2">
+				<img src="../img/index/cake2.png" alt="">
+				<a href="#">有莓有草莓<p>我要購買</p></a>
+			</li>
+			<li class="cake3">
+				<img src="../img/index/cake3.png" alt="">
+						<a href="#">巧克力莓莓<p>我要購買</p></a>
+			</li>
+			<li class="cake4">
+			
+				<img src="../img/index/cake4.png" alt="">
+				<a href="product_stra1.html">莓麗甜心<p>我要購買</p></a>		
+			</li>
+			<li class="cake5">
+				<img src="../img/index/cake5.png" alt="">	
+						<a href="#">草莓拿鐵<p>我要購買</p></a>
+			</li>
 
 			
+		</ul>
+
+		<h2>熱門商品</h2>
+			
+		<ul class="product" data-aos="fade-right" data-aos-offset="200">
+			
+			<li class="cake1">
+				<img src="../img/product/cake4.png" alt="">		
+				<a href="#">提拉米蘇<p>我要購買</p></a>		
+			</li>
+			<li class="cake2">
+				<img src="../img/product/cake5.png" alt="">
+				<a href="#">招牌生乳酪<p>我要購買</p></a>
+			</li>
+			<li class="cake3">
+				<img src="../img/product/cake2.png" alt="">
+				<a href="#">小山園抹茶<p>我要購買</p></a>
+			</li>
+			<li class="cake4">
+				<img src="../img/product/cake3.png" alt="">	
+				<a href="">傑利的起司<p>我要購買</p></a>
+					</li>
+			<li class="cake5">
+				<img src="../	img/product/cake1.png" alt="">	
+				<a href="#">黑富士山<p>我要購買</p></a>
+			</li>
+
+			
+		</ul>
+		<h2>手作餅乾</h2>
+			
+		<ul class="product" data-aos="fade-right" data-aos-offset="200">
+			
+		<li class="cake1">				
+			<img src="../img/product/cookie4.png" alt="">
+			<a href="">初戀的感覺<p>我要購買</p></a>			
+		</li>
+	
+		<li class="cake3">
+			<img src="../img/product/cookie2.png" alt="">
+			<a href="">熊熊派對<p>我要購買</p></a>
+		</li>
+
+		<li class="cake4">
+			<img src="../img/product/cookie3.png" alt="">	
+			<a href="">花生熊麼事<p>我要購買</p></a>
+		</li>
+
+		<li class="cake5">
+			<img src="../	img/product/cookie1.png" alt="">	
+			<a href="#">黑炭小精靈<p>我要購買</p></a>
+		</li>
+
+		
+	</ul>	
+</div>
+
+
+		
 
 
 
 <!-- ---------------customize--------------- -->
+	
 		
 			
-				
-	<div class="customize wrapper">
-		<ul class="customize-tit">
-			<li>
-				<img src="../img/product/CAKE.png" alt="">
-			</li>
-			<li>
-				<h2>專屬訂製</h2>
-				<p>為特別的日子帶來特別的驚喜<br>客製蛋糕工作天10天<br>請提前訂製預約討論後報價
-				<a href="#">馬上預約</a>
-			</li>
-			</ul>		 
-	</div>
+<div class="customize wrapper">
+	<ul class="customize-tit">
+		<li>
+			<img src="../img/product/CAKE.png" alt="">
+		</li>
+		<li>
+			<h2>專屬訂製</h2>
+			<p>為特別的日子帶來特別的驚喜<br>客製蛋糕工作天10天<br>請提前訂製預約討論後報價
+			<a href="#">馬上預約</a>
+		</li>
+		</ul>		 
+</div>
 	
-		<!-- ----------footer-------------- -->
-		<footer>
-			<div class="wrapper">
+<!-- ----------footer-------------- -->
+<footer>
+	<div class="wrapper">
 
-				<ul class="footer-icon">
-					<li> <a href="#">
-					<i class="fa fa-instagram" aria-hidden="true"></i></a> </li>
+		<ul class="footer-icon">
+			<li> <a href="#">
+			<i class="fa fa-instagram" aria-hidden="true"></i></a> </li>
 
-					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 
-					<li><a href="#">
-					<i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+			<li><a href="#">
+			<i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+
+		</ul>
+
+		<ul class="footer-inf">
+			<li><a href="#">服務條款</a></li>
+			<li><a href="#">隱私權聲明</a></li>
+			<li><a href="#">產品成分表</a></li>
+		</ul>	
+
 	
-				</ul>
+		
+		<ul class="footer-contact">
+			<li><p>Phone:</p>
+				02-2885-1234</li>
+			<li><p>Email:</p>SweetTanakae@service.com</li>	
+		</ul>	
 
-				<ul class="footer-inf">
+		<ul class="footer-where">
+			<li><p>Open:</p>11:00-21:00每周三公休 </li>
+			<li> <p>Location:</p>
+			台北市中山區南京東路三段219號5樓</li>
+		</ul>
+<!------------footer-rwd------------- -->
+			<div class="footer-rwd">
+				<ul>
+					<li>
+						<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+
+						<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+
+						<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					</li>
 					<li><a href="#">服務條款</a></li>
 					<li><a href="#">隱私權聲明</a></li>
 					<li><a href="#">產品成分表</a></li>
-				</ul>	
-
-			
-				
-				<ul class="footer-contact">
+				</ul>
+				<ul> 
 					<li><p>Phone:</p>
 						02-2885-1234</li>
 					<li><p>Email:</p>SweetTanakae@service.com</li>	
-				</ul>	
-
-				<ul class="footer-where">
 					<li><p>Open:</p>11:00-21:00每周三公休 </li>
 					<li> <p>Location:</p>
- 					台北市中山區南京東路三段219號5樓</li>
+						台北市中山區南京東路三段219號5樓</li>
 				</ul>
-<!------------footer-rwd------------- -->
-				<div class="footer-rwd">
-					<ul>
-						<li>
-							<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-			
-							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-			
-							<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-						</li>
-						<li><a href="#">服務條款</a></li>
-						<li><a href="#">隱私權聲明</a></li>
-						<li><a href="#">產品成分表</a></li>
-					</ul>
-					<ul> 
-						<li><p>Phone:</p>
-							02-2885-1234</li>
-						<li><p>Email:</p>SweetTanakae@service.com</li>	
-						<li><p>Open:</p>11:00-21:00每周三公休 </li>
-						<li> <p>Location:</p>
-						 台北市中山區南京東路三段219號5樓</li>
-					</ul>
-				</div>
+			</div>
 <!---------------------------- -->
-			</div>	
-				
-			<p class="p-bottom">Copyright © 2021 TibaMe all rights reserved. </p>
-			</footer>
+	</div>	
+		
+	<p class="p-bottom">Copyright © 2021 TibaMe all rights reserved. </p>
+	</footer>
 
 
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -286,10 +315,31 @@
              }
          },] 
 		});
+
+		//popup member
+		$(".popup-btn").click(function() {
+          var href = $(this).attr("href")
+          $(href).fadeIn(250);
+        });
+
+        $(".popup-close").click(function() {
+          $(".popup-wrap").fadeOut(200);
+        });
+
+        $(".signup").on("click",function(){
+          $(".login-form").addClass("off");
+          $(".signup-form").addClass("on"); 
+        });
+        $(".login").on("click",function(){
+          $(".signup-form").removeClass("on");
+          $(".login-form").removeClass("off");
+        });	
 	</script>
+
 	<script>
 		AOS.init();
-	</script>			
+	</script>		
+
 </body>
 </html>
 			  

@@ -21,6 +21,9 @@ a{
 	letter-spacing:2px;
 	cursor: pointer;
 }
+a:focus{
+	outline: 0;
+}
 
 .wrapper{
 	
@@ -383,8 +386,7 @@ button:focus{
 	top: 50%;
 	left: 50%;
 	box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.5);
-	background-image: url("../img/product/bg.png");
-	background-size: cover;
+	background-image: url("../img/index/bg.png");
 	text-align: center;
   }
 .popup-box img {
@@ -398,6 +400,7 @@ button:focus{
 	top:0px;
 	right:20px;
 	font-size:30px;
+	color: #FFD668;
   }
 .login-form{
 	font-size: 16px;
@@ -450,7 +453,7 @@ button:focus{
 .popup-wrap form .checkbox{
 	font-size: 12px;
   }
-input:valid {
+.popup-box input:valid {
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: right;
@@ -470,11 +473,11 @@ input:valid {
 	display: none;
   }
   
-form p {
+.popup-box p {
 	position: relative;
   }
   
-label {
+.popup-box p label {
 	position: absolute;
 	top: -10px;
 	left: 40px;

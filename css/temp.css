@@ -82,7 +82,7 @@ button.hamburger_icon{
 	display: none;
 
   }
-
+  	
 
   
 /* ----------每一條橫線的樣式 ----------*/
@@ -159,11 +159,8 @@ button.hamburger_icon:focus{
 	text-align: center;
 	display: none;
 	margin-top:8px;
+	z-index: 3;
   } 
-  .nav .ham-bar li{
-	  height:100px;
-	  line-height: 100px;
-  }
 .nav .ham-bar li:hover{
 	background-color: #FFD668;
 } 

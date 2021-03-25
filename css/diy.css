@@ -349,7 +349,7 @@ body{
 		right:0;
 	}
 	.slick-prev{
-		z-index:5;
+		z-index:3;
 		left: 0;
 	}
 }

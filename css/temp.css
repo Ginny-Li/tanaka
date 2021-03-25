@@ -471,8 +471,8 @@ button:focus{
 	color:dodgerblue;
 	background-color: white;
 	border-radius: 20px;
-	width: 12px;
-	height: 12px;
+	width: 10px;
+	height: 10px;
   }
 .popup-wrap form .checkbox{
 	font-size: 12px;

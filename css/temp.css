@@ -90,7 +90,7 @@ button.hamburger_icon{
   
 /* ----------每一條橫線的樣式 ----------*/
 button.hamburger_icon span.-hr{
-	height:1.5px;
+	height:1.2px;
 	width: 15px;
 	background-color:black;
 	display: inline-block;

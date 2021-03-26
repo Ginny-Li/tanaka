@@ -58,9 +58,34 @@ background-image:
 	padding-top: 30px;
 }
 
+.qa .down{
+	margin-top: -20px;
+	font-size: 30px;
+	color: #FF7D7D;
+	cursor: pointer;
+}
+
+@keyframes swing{
+	15%{transform: translatey(5px);}
+	40%{transform: translatey(-5px);}
+	65%{transform: translatey(2px);}
+	85%{transform: translatey(-2px);}
+	100%{transform: translatey(0px);}
+}
 
 .qa img{
 	margin: 30px auto;
+	cursor: pointer;
+	animation: swing 1s infinite;
+}
+.ask-soultion img{
+	animation: swing 0s infinite;
+}
+.que-soultion,.cake-soultion,.ask-soultion,.how-soultion{
+	display: none;
+}
+.que-soultion.on,.cake-soultion.on,.ask-soultion.on,.how-soultion.on{
+	display: block;
 }
 
 /*---------------ask-----------------*/
@@ -145,6 +170,9 @@ input:valid {
 	}
 	.mail{
 		display: none;
+	}
+	a{
+		color: inherit;
 	}
 	
 }

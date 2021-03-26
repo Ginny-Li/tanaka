@@ -46,12 +46,13 @@
 	border-radius: 10px;
 	color: white;
 	margin-right: 30px;
+	
 
 }
 .cart-link{
 	display: flex;
 	justify-content:center;
-	margin-top: -30px;
+	margin-top: -60px;
 	margin-bottom: 30px;
 	margin-left: 150px;
 }
@@ -71,6 +72,7 @@
 }
 .slider-nav{
 	padding-left:80px;
+	padding-top: 20px;
 }
 .slider-nav img{
 	max-width:150px;

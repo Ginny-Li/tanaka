@@ -64,19 +64,9 @@ background-image:
 	color: #FF7D7D;
 	cursor: pointer;
 }
-
-@keyframes swing{
-	15%{transform: translatey(5px);}
-	40%{transform: translatey(-5px);}
-	65%{transform: translatey(2px);}
-	85%{transform: translatey(-2px);}
-	100%{transform: translatey(0px);}
-}
-
 .qa img{
 	margin: 30px auto;
 	cursor: pointer;
-	animation: swing 1s infinite;
 }
 .ask-soultion img{
 	animation: swing 0s infinite;

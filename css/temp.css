@@ -381,7 +381,7 @@ button:focus{
 .popup-box {
 	min-width: 320px;
 	width: 50%;
-	height: 75%;
+	height: 85%;
 	transform: translate(-50%, -50%);
 	padding-top:50px;
 	position: absolute;
